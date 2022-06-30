@@ -3,8 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Space+Mono&display=swap');
 
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
 }
 
 .body {
@@ -27,21 +27,19 @@
   height: 20px;
   width: 76px;
   font-size: 18px;
-  color: #6070FF;
-  font-family: Poppins;
+  color: #6070ff;
+  font-family: Poppins, Times, serif;
   font-weight: 700;
   text-align: center;
-  border: 0px;
   line-height: 20px;
 }
-
 
 .menu-icon {
   margin-right: 28px;
   width: 18px;
   height: 12px;
   background-image: url("../images/menu-icon.png");   
-  }
+}
 
 .main {
   width: 375px;
@@ -58,7 +56,7 @@
   height: 150px;
   width: 327px;
   font-size: 40px;
-  color: #172B4D;
+  color: #172b4d;
   font-family: Poppins;
   font-weight: 700;
   border:0px;
@@ -72,8 +70,8 @@
   height: 146px;
   width: 327px;
   font-size: 16px;
-  color: #172B4D;
-  font-family: Poppins;
+  color: #172b4d;
+  font-family: Poppins, Times, serif;
   font-style: normal;
   font-weight: 400;
   border:0px;
@@ -87,7 +85,7 @@
   width: 120px;
   font-size: 16px;
   color: #7F8CFF;
-  font-family: Poppins;
+  font-family: Poppins, Times, serif;
   font-style: normal;
   font-weight: 500;
   border:0px;
@@ -102,7 +100,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content:space-between ;
+  justify-content:space-between;
 }
 
 .twitter-icon {
@@ -134,4 +132,3 @@
   width: 20px;
   height: 20px; 
 }
-
