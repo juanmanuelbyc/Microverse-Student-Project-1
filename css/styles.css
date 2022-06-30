@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Space+Mono&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+
+.body {
+    width: 375px;
+    background-image: ;
+  }
+
+  .navbar {
+    display: flex;
+    width:375px;
+    height: 52px;
+    background-color: rgb(209, 209, 231);
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+
+  .my-logo {
+    margin-left: 24px;
+    height: 20px;
+    width: 76px;
+    font-size: 18px;
+    color: #6070FF;
+    font-family: Poppins;
+    font-weight: 700;
+    text-align: center;
+    border:0px;
+    line-height: 20px;
+}
+
+  .menu-icon {
+    margin-right: 28px;
+    width: 18px;
+    height: 12px;
+    background-image: url("../images/menu-icon.png");   
+  }
+  
