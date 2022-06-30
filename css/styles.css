@@ -1,22 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Space+Mono&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Space+Mono&display=swap');
 
 * {
     margin: 0;
     padding: 0;
   }
 
-
 .body {
     width: 375px;
-    background-image: ;
+    display: flex;
+    flex-direction: column;
   }
 
   .navbar {
     display: flex;
     width:375px;
     height: 52px;
-    background-color: rgb(209, 209, 231);
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
@@ -42,4 +42,96 @@
     height: 12px;
     background-image: url("../images/menu-icon.png");   
   }
+
+  .main {
+    width: 375px;
+    height: 588px;
+    background-image: url("../images/shapes-backgroud.png");
+    display: flex;
+    flex-direction: column; 
+  }
   
+  .primary-text {
+    margin-top: 114px;
+    margin-left: 24px;
+    text-align:left;
+    height: 150px;
+    width: 327px;
+    font-size: 40px;
+    color: #172B4D;
+    font-family: Poppins;
+    font-weight: 700;
+    border:0px;
+    line-height: 52px;
+}
+
+.secondary-text {
+    margin-top: 12px;
+    margin-left: 24px;
+    text-align:left;
+    height: 146px;
+    width: 327px;
+    font-size: 16px;
+    color: #172B4D;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    border:0px;
+    line-height: 24px;
+}
+
+.connect-text {
+    margin-top: 12px;
+    margin-left: 24px;
+    height: 24px;
+    width: 120px;
+    font-size: 16px;
+    color: #7F8CFF;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    border:0px;
+    line-height: 24px;
+}
+
+.socialmedia-icons {
+    margin-top: 12px;
+    margin-left: 24px;
+    width: 170.17px;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between ;
+  }
+
+  .twitter-icon {
+    background-image: url("../images/twitter-icon.png");
+    width: 19.99px;
+    height: 19.96px;   
+  }
+
+  .linkedin-icon {
+    background-image: url("../images/linkedin-icon.png");
+    width: 20px;
+    height: 20px; 
+  }
+
+  .m-icon {
+    background-image: url("../images/m-icon.png");
+    width: 20px;
+    height: 20px; 
+  }
+
+  .cat-icon {
+    background-image: url("../images/cat-icon.png");
+    width: 20px;
+    height: 20px; 
+  }
+
+  .fingers-icon {
+    background-image: url("../images/fingers-icon.png");
+    width: 20px;
+    height: 20px; 
+  }
+
