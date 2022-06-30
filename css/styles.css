@@ -57,7 +57,7 @@
   height: 91%;
   background-image: url("../images/shapes-backgroud.png");
   background-size:cover;                      /* <------ */
-  background-position: left top  
+  background-position: left top;  
   display: flex;
   flex-direction: column;
 }
