@@ -57,7 +57,7 @@
   width: 327px;
   font-size: 40px;
   color: #172b4d;
-  font-family: Poppins;
+  font-family: Poppins, Times, serif;
   font-weight: 700;
   border: 0;
   line-height: 52px;
@@ -106,7 +106,7 @@
 .twitter-icon {
   background-image: url("../images/twitter-icon.png");
   width: 19.99px;
-  height: 19.96px;  
+  height: 19.96px;
 }
 
 .linkedin-icon {
