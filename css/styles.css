@@ -155,23 +155,24 @@ ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(327px, 1fr));
   justify-content: space-around;
-  align-content: space-evenly;
+  align-items:start;
 }
 
 .project {
+  margin: 20px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column; 
-  align-items: center;
   padding: 16px;
   gap: 12px;
   width: 327px;
-  height: 552px;
+  height: auto;
   background: #ffffff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   flex: none;
   flex-grow: 0;
+  align-self: center;
 }
 
 #project1 {
@@ -199,28 +200,29 @@ ul {
 #project2 .pimage {
   width: 295px;
   height: 220px;
-  background-image: url("../images/p1image.png");
+  background-image: url("../images/p2image.png");
 }
 
 #project3 .pimage {
   width: 295px;
   height: 220px;
-  background-image: url("../images/p1image.png");
+  background-image: url("../images/p3image.png");
 }
 
 #project4 .pimage { 
   width: 295px;
   height: 220px;
-  background-image: url("../images/p1image.png");
+  background-image: url("../images/p4image.png");
 }
 
 .p-title {
-  Width: 295px;
-  Height: 36px;
+  Width: 220px;
   flex: none;
   order: 0;
   flex-grow: 0;
   align-items: center;
+  text-align: left;
+  align-self: flex-start;
 }
 
 .p-title h2 {
@@ -289,4 +291,51 @@ ul {
   color: #344563;
 }
 
+.languages-list {
+  display: flex;
+  width: 295px;
+  Height: 24px;
+  align-items: center;
+}
+
+.lang {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 12px; 
+  width: auto;
+  height: 24px;
+  background: #EBEBFF;
+  border-radius: 8px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070FF;
+}
+
+.project-access {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  width: 132px;
+  height: 48px;
+  border: 1px solid #6070FF;
+  border-radius: 8px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #396DF2;
+}
+
+
+  
 
