@@ -7,16 +7,23 @@
   padding: 0;
 }
 
-.body {
-  width: 375px;
+
+.intro {
+  min-width: 200px;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
 }
 
+.header {
+  width: 100%;
+  height: 9%;
+}
+
 .navbar {
+  width: 100%;
+  height: 100%;
   display: flex;
-  width: 375px;
-  height: 52px;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
@@ -24,7 +31,9 @@
 
 .my-logo {
   margin-left: 24px;
-  height: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 50%;
   width: 76px;
   font-size: 18px;
   color: #6070ff;
@@ -36,39 +45,44 @@
 
 .menu-icon {
   margin-right: 28px;
+  margin-top: 14px;
+  margin-bottom: 14px;
   width: 18px;
-  height: 12px;
+  height: 12px; 
   background-image: url("../images/menu-icon.png");
 }
 
 .main {
-  width: 375px;
-  height: 588px;
+  width: 100%;
+  height: 91%;
   background-image: url("../images/shapes-backgroud.png");
+  background-size:cover;                      /* <------ */
+  background-position: left top  
   display: flex;
   flex-direction: column;
 }
 
-.primary-text {
+.primary-text-container {
   margin-top: 114px;
   margin-left: 24px;
   text-align: left;
-  height: 150px;
-  width: 327px;
+  width: 87.2%;
+  border: 0;
+  line-height: 52px;
+}
+
+.primary-text {
   font-size: 40px;
   color: #172b4d;
   font-family: Poppins, Times, serif;
   font-weight: 700;
-  border: 0;
-  line-height: 52px;
 }
 
 .secondary-text {
   margin-top: 12px;
   margin-left: 24px;
   text-align: left;
-  height: 146px;
-  width: 327px;
+  width: 87.2%;
   font-size: 16px;
   color: #172b4d;
   font-family: Poppins, Times, serif;
@@ -82,7 +96,7 @@
   margin-top: 12px;
   margin-left: 24px;
   height: 24px;
-  width: 120px;
+  width: 32%;
   font-size: 16px;
   color: #7f8cff;
   font-family: Poppins, Times, serif;
@@ -95,18 +109,21 @@
 .socialmedia-icons {
   margin-top: 12px;
   margin-left: 24px;
-  width: 170.17px;
+  width: 45.38%;
+  max-width: 400px;
   height: 20px;
+}
+
+ul {
+  list-style-type: none;
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: space-between;
 }
 
 .twitter-icon {
   background-image: url("../images/twitter-icon.png");
-  width: 19.99px;
-  height: 19.96px;
+  width: 20px;
+  height: 20px;
 }
 
 .linkedin-icon {
