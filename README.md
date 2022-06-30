@@ -13,7 +13,6 @@ We are trying to apply what we have studied regarding:
 
 - HTML, CSS
 
-
 ## Authors
 
 👤 **Author1**
