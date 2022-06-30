@@ -3,8 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Space+Mono&display=swap');
 
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 .body {
@@ -38,7 +38,8 @@
   margin-right: 28px;
   width: 18px;
   height: 12px;
-  background-image: url("../images/menu-icon.png");   
+  background-image: url("../images/menu-icon.png");
+
 }
 
 .main {
@@ -46,13 +47,13 @@
   height: 588px;
   background-image: url("../images/shapes-backgroud.png");
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
 }
   
 .primary-text {
   margin-top: 114px;
   margin-left: 24px;
-  text-align:left;
+  text-align: left;
   height: 150px;
   width: 327px;
   font-size: 40px;
@@ -66,7 +67,7 @@
 .secondary-text {
   margin-top: 12px;
   margin-left: 24px;
-  text-align:left;
+  text-align: left;
   height: 146px;
   width: 327px;
   font-size: 16px;
@@ -100,7 +101,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 
 .twitter-icon {
