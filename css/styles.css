@@ -155,21 +155,21 @@ ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(327px, 1fr));
   justify-content: space-around;
-  align-items:start;
+  align-items: start;
 }
 
 .project {
   margin: 20px;
   box-sizing: border-box;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   padding: 16px;
   gap: 12px;
   width: 327px;
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
-  justify-content:space-around;
+  justify-content: space-around;
 }
 
 #project1 {
@@ -208,14 +208,14 @@ ul {
   background-image: url("../images/p3image.png");
 }
 
-#project4 .pimage { 
+#project4 .pimage {
   width: 295px;
   height: 220px;
   background-image: url("../images/p4image.png");
 }
 
 .p-title {
-  Width: 220px;
+  width: 220px;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -225,25 +225,25 @@ ul {
 }
 
 .p-title h2 {
-  font-family: 'Poppins';
+  font-family: Poppins, Times, serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .details-list {
   display: flex;
   width: 295px;
-  Height: 36px;
+  height: 36px;
   align-items: center;
 }
 
 .client {
   width: 55px;
   height: 16px;
-  font-family: 'Poppins';
+  font-family: Poppins, Times, serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -260,29 +260,29 @@ ul {
 .role {
   width: 90px;
   height: 16px;
-  font-family: 'Poppins';
+  font-family: Poppins, Times, serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
-  color: #7A869A;
+  color: #7a869a;
 }
 
 .year {
   width: 29px;
   height: 16px;
-  font-family: 'Poppins';
+  font-family: Poppins, Times, serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
-  color: #7A869A;
+  color: #7a869a;
 }
 
 .p-description {
   width: 295px;
   height: 76px;
-  font-family: 'Poppins';
+  font-family: Poppins, Times, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -293,7 +293,7 @@ ul {
 .languages-list {
   display: flex;
   width: 295px;
-  Height: 24px;
+  height: 24px;
   align-items: center;
 }
 
@@ -301,18 +301,18 @@ ul {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 4px 12px; 
+  padding: 4px 12px;
   width: auto;
-  height: 24px;
-  background: #EBEBFF;
+  height: 24px; 
+  background: ##ebebff;
   border-radius: 8px;
-  font-family: 'Poppins';
+  font-family: Poppins, Times, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  color: #6070FF;
+  color: #6070ff;
 }
 
 .project-access {
@@ -325,16 +325,16 @@ ul {
   padding: 12px;
   width: 132px;
   height: 48px;
-  border: 1px solid #6070FF;
+  border: 1px solid #6070ff;
   border-radius: 8px;
-  font-family: 'Poppins';
+  font-family: Poppins, Times, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #396DF2;
+  color: #396df2;
 }
 
 .about-me {
@@ -355,17 +355,17 @@ ul {
   height: 48px;
   border: 1px solid #6070FF;
   border-radius: 8px;
-  font-family: 'Poppins';
+  font-family: Poppins, Times, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #396DF2;
+  color: #396df2;
   justify-content: center;
 }
-  
+
 .categories-info {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -376,17 +376,17 @@ ul {
 
 .categorie {
   margin-left: 36px;
-  Width: 327px;
-  Height: 72px;
+  width: 327px;
+  height: 72px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .categorie-name {
-  Width: 237px;
-  Height: 24px;
-  font-family: 'Poppins';
+  width: 237px;
+  height: 24px;
+  font-family: Poppins, Times, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -395,15 +395,16 @@ ul {
 
 #cat1 .arrow-img {
   margin-right: 55px;
-  Width: 24px;
-  Height: 25px;
+  width: 24px;
+  height: 25px;
   background-image: url("../images/arrow1.png");
 }
 
-#cat2 .arrow-img, #cat3 .arrow-img {
-  Width: 24px;
+#cat2 .arrow-img,
+#cat3 .arrow-img {
+  width: 24px;
   margin-right: 55px;
-  Height: 25px;
+  height: 25px;
   background-image: url("../images/arrow2.png");
 }
 
@@ -412,7 +413,7 @@ ul {
   Width: 303px;
   Height: 66.72px;
   display: flex;
-  background: #F7F7F9;
+  background: #f7f7f9;
   border-radius: 8px;
   align-items: center;
   flex: none;
@@ -429,32 +430,32 @@ ul {
   margin-left: 16px;
   width: 215px;
   height: 24px;
-  font-family: 'Poppins';
+  font-family: Poppins, Times, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
-  line-height: 20px;    
+  line-height: 20px;
   display: flex;
   align-items: center;
 }
 
 #subcat2 .subcat-logo {
   margin-left: 12px;
-  Width: 48px;
-  Height: 48px;
+  width: 48px;
+  height: 48px;
   background-image: url("../images/HTML-logo.png");
 }
 
 #subcat3 .subcat-logo {
   margin-left: 12px;
-  Width: 48px;
-  Height: 48px;
+  width: 48px;
+  height: 48px;
   background-image: url("../images/CSS-logo.png");
 }
 
 .separator-line {
   margin-left: 24px;
-  Width: 327px;
-  Height: 1px;
-  background: #DFE1E6;
+  width: 327px;
+  height: 1px;
+  background: #dfe1e6;
 }
