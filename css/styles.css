@@ -303,7 +303,7 @@ ul {
   align-items: center;
   padding: 4px 12px;
   width: auto;
-  height: 24px; 
+  height: 24px;
   background: ##ebebff;
   border-radius: 8px;
   font-family: Poppins, Times, serif;
@@ -353,7 +353,7 @@ ul {
   align-items: center;
   width: 162px;
   height: 48px;
-  border: 1px solid #6070FF;
+  border: 1px solid #6070ff;
   border-radius: 8px;
   font-family: Poppins, Times, serif;
   font-style: normal;
@@ -410,8 +410,8 @@ ul {
 
 .subcategorie {
   margin-left: 36px;
-  Width: 303px;
-  Height: 66.72px;
+  width: 303px;
+  height: 66.72px;
   display: flex;
   background: #f7f7f9;
   border-radius: 8px;
@@ -421,8 +421,8 @@ ul {
 
 #subcat1 .subcat-logo {
   margin-left: 12px;
-  Width: 48px;
-  Height: 48px;
+  width: 48px;
+  height: 48px;
   background-image: url("../images/Javascript-logo.png");
 }
 
