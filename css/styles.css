@@ -376,16 +376,16 @@ ul {
 
 .categorie {
   margin-left: 36px;
-  Width 237px;
-  Height 72px;
+  Width: 327px;
+  Height: 72px;
   display: flex;
   align-items: center;
-  justify-content: space-between;  
+  justify-content: space-between;
 }
 
 .categorie-name {
-  Width 237px;
-  Height 24px;
+  Width: 237px;
+  Height: 24px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
@@ -394,15 +394,15 @@ ul {
 }
 
 #cat1 .arrow-img {
-  margin-right: 10px;
+  margin-right: 55px;
   Width: 24px;
   Height: 25px;
   background-image: url("../images/arrow1.png");
 }
 
 #cat2 .arrow-img, #cat3 .arrow-img {
-  margin-right: 10px;
   Width: 24px;
+  margin-right: 55px;
   Height: 25px;
   background-image: url("../images/arrow2.png");
 }
