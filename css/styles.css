@@ -304,7 +304,7 @@ ul {
   padding: 4px 12px;
   width: auto;
   height: 24px;
-  background: ##ebebff;
+  background: #ebebff;
   border-radius: 8px;
   font-family: Poppins, Times, serif;
   font-style: normal;
@@ -337,6 +337,22 @@ ul {
   color: #396df2;
 }
 
+.project-access:hover {
+  background: #6070FF;
+  box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+  color: #fff;
+}
+
+.project-access:active {
+  background: #2230d2;
+  color: #5e6c84;
+}
+
+.project-access:disabled {
+  border: 1px solid #C1C7D0;
+  color: #5e6c84;
+}
+
 .about-me {
   width: 100%;
   display: flex;
@@ -364,6 +380,22 @@ ul {
   letter-spacing: 0.03em;
   color: #396df2;
   justify-content: center;
+}
+
+.resume-access:hover {
+  background: #6070FF;
+  box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+  color: #fff;
+}
+
+.resume-access:active {
+  background: #2230d2;
+  color: #5e6c84;
+}
+
+.resume-access:disabled {
+  border: 1px solid #C1C7D0;
+  color: #5e6c84;
 }
 
 .categories-info {
