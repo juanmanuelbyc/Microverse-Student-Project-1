@@ -409,8 +409,8 @@ ul {
 
 .subcategorie {
   margin-left: 36px;
-  Width 100px;
-  Height 66.72px;
+  Width: 303px;
+  Height: 66.72px;
   display: flex;
   background: #F7F7F9;
   border-radius: 8px;
