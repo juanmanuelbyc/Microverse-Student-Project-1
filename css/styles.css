@@ -491,3 +491,27 @@ ul {
   height: 1px;
   background: #dfe1e6;
 }
+
+.contactme {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../images/contact-me-shapes-background.png"), url("../images/contact-me-blue-background.png");
+  background-size: cover;
+}
+
+.contactme-title {
+  margin-left: 12px;
+  margin-top: 103px;
+  width: 801px;
+  height: 56px;
+  font-family: Poppins, Times, serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
