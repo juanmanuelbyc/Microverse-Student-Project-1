@@ -3,16 +3,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Space+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Space+Mono&display=swap');
 
+:root {
+  --mainfont: Poppins, Times, serif;
+}
+
 * {
   margin: 0;
   padding: 0;
+  font-family: var(--mainfont);
 }
 
 .intro {
-  min-width: 375px;
   display: flex;
   flex-direction: column;
-}
+} 
 
 .header {
   width: 100%;
@@ -35,8 +39,7 @@
   height: 50%;
   width: 76px;
   font-size: 18px;
-  color: #6070ff;
-  font-family: Poppins, Times, serif;
+  color: #6070ff;f
   font-weight: 700;
   text-align: center;
   line-height: 20px;
@@ -53,38 +56,37 @@
 
 .main {
   width: 100%;
-  height: 91%;
   background-image: url("../images/shapes-backgroud.png");
-  background-size: cover;                      /* <------ */
-  background-position: left top;
+  background-size: cover;
   display: flex;
   flex-direction: column;
+  align-items: left;
 }
 
 .primary-text-container {
   margin-top: 114px;
-  margin-left: 24px;
   text-align: left;
   width: 87.2%;
+  max-width: 370px;
   border: 0;
   line-height: 52px;
+  margin-left: 6.4%;
 }
 
 .primary-text {
   font-size: 40px;
   color: #172b4d;
-  font-family: Poppins, Times, serif;
   font-weight: 700;
 }
 
 .secondary-text {
   margin-top: 12px;
-  margin-left: 24px;
   text-align: left;
+  margin-left: 6.4%;
   width: 87.2%;
+  max-width: 750px;
   font-size: 16px;
   color: #172b4d;
-  font-family: Poppins, Times, serif;
   font-style: normal;
   font-weight: 400;
   border: 0;
@@ -93,12 +95,11 @@
 
 .connect-text {
   margin-top: 12px;
-  margin-left: 24px;
+  margin-left: 6.4%;
   height: 24px;
   width: 32%;
   font-size: 16px;
   color: #7f8cff;
-  font-family: Poppins, Times, serif;
   font-style: normal;
   font-weight: 500;
   border: 0;
@@ -107,7 +108,7 @@
 
 .socialmedia-icons {
   margin-top: 12px;
-  margin-left: 24px;
+  margin-left: 6.4%;
   width: 45.38%;
   max-width: 400px;
   height: 20px;
@@ -150,15 +151,16 @@ ul {
 }
 
 .projects {
-  padding: 30px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(327px, 1fr));
   justify-content: space-around;
-  align-items: start;
+  align-items:start;
+  column-gap: 10px;
+  margin-left: 6.4%;
 }
 
 .project {
-  margin: 20px;
+  margin-top: 40px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -224,7 +226,6 @@ ul {
 }
 
 .p-title h2 {
-  font-family: Poppins, Times, serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -242,7 +243,6 @@ ul {
 .client {
   width: 55px;
   height: 16px;
-  font-family: Poppins, Times, serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -259,7 +259,6 @@ ul {
 .role {
   width: 90px;
   height: 16px;
-  font-family: Poppins, Times, serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -270,7 +269,6 @@ ul {
 .year {
   width: 29px;
   height: 16px;
-  font-family: Poppins, Times, serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -281,7 +279,6 @@ ul {
 .p-description {
   width: 295px;
   height: 76px;
-  font-family: Poppins, Times, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -305,7 +302,6 @@ ul {
   height: 24px;
   background: #ebebff;
   border-radius: 8px;
-  font-family: Poppins, Times, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -326,7 +322,6 @@ ul {
   height: 48px;
   border: 1px solid #6070ff;
   border-radius: 8px;
-  font-family: Poppins, Times, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -360,7 +355,7 @@ ul {
 
 .resume-access {
   box-sizing: border-box;
-  margin-left: 24px;
+  margin-left: 6.4%;
   margin-top: 25px;
   margin-bottom: 25px;
   display: flex;
@@ -370,7 +365,6 @@ ul {
   height: 48px;
   border: 1px solid #6070ff;
   border-radius: 8px;
-  font-family: Poppins, Times, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -400,13 +394,13 @@ ul {
 .categories-info {
   margin-top: 30px;
   margin-bottom: 30px;
+  margin-left: 6.4%;
   width: 327px;
   display: flex;
   flex-direction: column;
 }
 
 .categorie {
-  margin-left: 36px;
   width: 327px;
   height: 72px;
   display: flex;
@@ -417,7 +411,6 @@ ul {
 .categorie-name {
   width: 237px;
   height: 24px;
-  font-family: Poppins, Times, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -440,7 +433,6 @@ ul {
 }
 
 .subcategorie {
-  margin-left: 36px;
   width: 303px;
   height: 66.72px;
   display: flex;
@@ -461,7 +453,6 @@ ul {
   margin-left: 16px;
   width: 215px;
   height: 24px;
-  font-family: Poppins, Times, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -485,7 +476,6 @@ ul {
 }
 
 .separator-line {
-  margin-left: 24px;
   width: 327px;
   height: 1px;
   background: #dfe1e6;
@@ -498,28 +488,25 @@ ul {
   background-image: url("../images/contact-me-shapes-background.png"), url("../images/contact-me-blue-background.png");
   background-size: cover;
   text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .contactme-title {
   margin-top: 103px;
-  padding-left: 70px;
   width: 801px;
   height: 56px;
-  font-family: Poppins, Times, serif;
   font-style: normal;
   font-weight: 700;
   font-size: 25px;
   line-height: 52px;
-  display: flex;
   color: #fff;
 }
 
 .contactme-intro {
   margin-top: 12px;
-  padding-left: 20px;
   width: 327px;
   height: 102px;
-  font-family: Poppins, Times, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -534,7 +521,6 @@ ul {
   display: flex;
   flex-direction: column;
   text-align: left;
-  padding-left: 24px;
 }
 
 .input-name {
@@ -545,7 +531,6 @@ ul {
   background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
-  font-family: Poppins, Times, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -560,7 +545,6 @@ ul {
   background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
-  font-family: Poppins, Times, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -575,7 +559,6 @@ ul {
   background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
-  font-family: Poppins, Times, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -592,7 +575,6 @@ ul {
   height: 48px;
   background: #fff;
   border-radius: 8px;
-  font-family: Poppins, Times, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
