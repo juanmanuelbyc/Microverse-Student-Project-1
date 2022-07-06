@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Space+Mono&display=swap');
 
 :root {
-  --mainfont: Poppins, Times, serif;
+  --mainfont: poppins, times, serif;
 }
 
 * {
@@ -16,7 +16,7 @@
 .intro {
   display: flex;
   flex-direction: column;
-} 
+}
 
 .header {
   width: 100%;
@@ -84,7 +84,7 @@
   max-width: 370px;
   border: 0;
   line-height: 52px;
-  margin-left: 6.4%;  
+  margin-left: 6.4%;
 }
 
 .primary-text {
@@ -169,7 +169,7 @@ ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(327px, 1fr));
   justify-content: space-around;
-  align-items:start;
+  align-items: start;
   column-gap: 10px;
   margin-left: 6.4%;
 }
@@ -367,7 +367,6 @@ ul {
   display: flex;
   padding-left: 6.4%;
 }
-
 
 .about-me-content {
   display: flex;
@@ -644,9 +643,7 @@ ul {
   color: #5e6c84;
 }
 
-
 @media (min-width: 1000px) {
-
   .menu-icon {
     display: none;
   }
@@ -718,7 +715,7 @@ ul {
     background-position: center;
   }
 
-  .p-title h2{
+  .p-title h2 {
     font-size: 40px;
     line-height: 52px;
     width: fit-content;
@@ -743,7 +740,9 @@ ul {
     align-items: center;
   }
 
-  .client, .year, .role  {
+  .client,
+  .year, 
+  .role {
     font-size: 18px;
     line-height: 24px;
     width: fit-content;
@@ -766,7 +765,7 @@ ul {
     display: flex;
     flex-direction: row;
     width: 80.3%;
-    align-items:baseline;
+    align-items: baseline;
     flex-wrap: nowrap;
   }
 
@@ -813,7 +812,9 @@ ul {
     align-items: center;
   }
 
-  .input-name, .input-email, .input-textarea {
+  .input-name,
+  .input-email,
+  .input-textarea {
     width: 447px;
   }
 
