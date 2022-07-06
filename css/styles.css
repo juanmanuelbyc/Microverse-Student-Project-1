@@ -64,6 +64,12 @@
   background-size: cover;
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
   align-items: left;
 }
 
@@ -74,7 +80,7 @@
   max-width: 370px;
   border: 0;
   line-height: 52px;
-  margin-left: 6.4%;
+  margin-left: 6.4%;  
 }
 
 .primary-text {
@@ -88,7 +94,7 @@
   text-align: left;
   margin-left: 6.4%;
   width: 87.2%;
-  max-width: 750px;
+  max-width: 840px;
   font-size: 16px;
   color: #172b4d;
   font-style: normal;
@@ -101,7 +107,7 @@
   margin-top: 12px;
   margin-left: 6.4%;
   height: 24px;
-  width: 32%;
+  width: fit-content;
   font-size: 16px;
   color: #7f8cff;
   font-style: normal;
@@ -354,7 +360,27 @@ ul {
 .about-me {
   width: 100%;
   display: flex;
+
+}
+
+.about-me-content {
+  display: flex;
   flex-direction: column;
+  width: 100%;
+}
+
+.about-intro {
+  width: 40%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-details {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
 }
 
 .resume-access {
@@ -398,6 +424,13 @@ ul {
 .categories-info {
   margin-top: 30px;
   margin-bottom: 30px;
+  margin-left: 6.4%;
+  width: 327px;
+  display: flex;
+  flex-direction: column;
+}
+
+.subcategories-info {
   margin-left: 6.4%;
   width: 327px;
   display: flex;
@@ -602,20 +635,180 @@ ul {
 
 
 @media (min-width: 1000px) {
+
   .menu-icon {
     display: none;
   }
+
   .navbar {
-    padding-left: 155px;
-    padding-right: 155px;
+    padding-left: 10.77%;
+    padding-right: 10.77%;
   }
+
   .navlink {
     justify-self: right;
   }
-}
 
-@media (max-width: 1000px) {
-  .navlink {
-    display: none;
+  .main {
+    padding-top: 100px;
+    padding-bottom: 250px;
+  }
+
+  .projects {
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 25% 25% 25%;
+    justify-items: left;
+    padding-left: 5%;
+
+  }
+
+  .project {
+    display: flex;
+    flex-direction: row;
+    width: 80.3%;
+    height: 496px;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+  }
+
+  #project1 .pimage {
+    width: 48.05%;
+    height: auto;
+    background-image: url("../images/p1imagebig.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #project2 .pimage {
+    width: 48.05%;
+    height: auto;
+    background-image: url("../images/p1imagebig.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #project3 .pimage {
+    width: 48.05%;
+    height: auto;
+    background-image: url("../images/p1imagebig.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #project4 .pimage {
+    width: 48.05%;
+    height: auto;
+    background-image: url("../images/p1imagebig.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .p-title h2{
+    font-size: 40px;
+    line-height: 52px;
+    width: fit-content;
+  }
+
+  .projectdetails {
+    width: 48.05%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 10%;
+    padding-left: 15px;
+    padding-top: 35px;
+  }
+
+  .details-list {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .client, .year, .role  {
+    font-size: 18px;
+    line-height: 24px;
+    width: fit-content;
+    padding: 0;
+    margin: 0;
+  }
+
+  .p-description  {
+    font-size: 16px;
+    line-height: 24px;
+    width: fit-content;
+    padding-right: 60px;
+  }
+
+  .about-me {
+    padding-left: 10%;
+  }
+
+  .about-me-content {
+    display: flex;
+    flex-direction: row;
+    width: 80.3%;
+    align-items:baseline;
+    flex-wrap: nowrap;
+  }
+
+  .about-intro {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-intro .secondary-text {
+    max-width: 447px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .subcategories-info {
+    flex-direction: row;
+    justify-items: left;
+    margin-left: -10px;
+  }
+
+  .subcategorie {
+    width: 122px;
+    height: 120px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex: none;
+  }
+
+  .categorie {
+    width: 640px;
+  }
+  
+  .separator-line {
+    width: 640px;
+  }
+
+  .contactme .contactme-intro {
+    width: 570px;
+    margin-bottom: 0;
+  }
+
+  .form-elements-list {
+    align-items: center;
+  }
+
+  .input-name, .input-email, .input-textarea {
+    width: 447px;
+  }
+
+  .form-elements-list {
+    margin-top: 0;
   }
 }
+
+
