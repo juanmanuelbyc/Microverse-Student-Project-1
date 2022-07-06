@@ -671,7 +671,6 @@ ul {
     grid-template-rows: 25% 25% 25% 25%;
     justify-items: left;
     padding-left: 5%;
-
   }
 
   .project {
@@ -822,5 +821,3 @@ ul {
     margin-top: 0;
   }
 }
-
-
