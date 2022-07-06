@@ -50,6 +50,10 @@
   justify-content: space-between;
 }
 
+.navlink {
+  display: none;
+}
+
 .menu-icon {
   margin-top: 14px;
   margin-bottom: 14px;
@@ -87,6 +91,7 @@
   font-size: 40px;
   color: #172b4d;
   font-weight: 700;
+  padding: 0;
 }
 
 .secondary-text {
@@ -119,7 +124,7 @@
 .socialmedia-icons {
   margin-top: 12px;
   margin-left: 6.4%;
-  width: 45.38%;
+  width: auto;
   max-width: 400px;
   height: 20px;
 }
@@ -360,8 +365,9 @@ ul {
 .about-me {
   width: 100%;
   display: flex;
-
+  padding-left: 6.4%;
 }
+
 
 .about-me-content {
   display: flex;
@@ -376,16 +382,21 @@ ul {
   flex-direction: column;
 }
 
+.about-intro .primary-text {
+  margin-left: 0;
+  padding-left: 0;
+}
+
 .about-details {
   width: 40%;
   display: flex;
   flex-direction: column;
-  justify-content: left;
+  justify-content: center;
 }
 
 .resume-access {
-  box-sizing: border-box;
   margin-left: 6.4%;
+  box-sizing: border-box;
   margin-top: 25px;
   margin-bottom: 25px;
   display: flex;
@@ -646,6 +657,7 @@ ul {
   }
 
   .navlink {
+    display: inline;
     justify-self: right;
   }
 
