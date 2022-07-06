@@ -741,7 +741,7 @@ ul {
   }
 
   .client,
-  .year, 
+  .year,
   .role {
     font-size: 18px;
     line-height: 24px;
@@ -750,7 +750,7 @@ ul {
     margin: 0;
   }
 
-  .p-description  {
+  .p-description {
     font-size: 16px;
     line-height: 24px;
     width: fit-content;
@@ -798,7 +798,7 @@ ul {
   .categorie {
     width: 640px;
   }
-  
+
   .separator-line {
     width: 640px;
   }
@@ -810,15 +810,12 @@ ul {
 
   .form-elements-list {
     align-items: center;
+    margin-top: 0;
   }
 
   .input-name,
   .input-email,
   .input-textarea {
     width: 447px;
-  }
-
-  .form-elements-list {
-    margin-top: 0;
   }
 }
