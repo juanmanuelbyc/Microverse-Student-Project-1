@@ -14,7 +14,7 @@
 }
 
 .body {
-  background-color: #F4F5F7;
+  background-color: #f4f5f7;
 }
 
 .intro {
@@ -770,7 +770,7 @@ ul {
     background-image: url("../images/about\ myself\ -\ background-\ shape-\ desktop.png");
     background-size: cover;
     padding: 0%;
-    height: 924PX;
+    height: 924px;
   }
 
   .about-me-content {
