@@ -695,6 +695,7 @@ ul {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    transition: all 0.5s ease-out;
   }
 
   #project2 .pimage {
@@ -714,6 +715,7 @@ ul {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    transition: all 0.5s ease-out;
   }
 
   #project4 .pimage {
@@ -723,6 +725,7 @@ ul {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    transition: all 0.5s ease-out;
   }
 
   .p-title h2 {
@@ -838,5 +841,4 @@ ul {
   .input-textarea {
     width: 447px;
   }
-  
 }
