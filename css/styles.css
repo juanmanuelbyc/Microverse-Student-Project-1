@@ -13,6 +13,10 @@
   font-family: var(--mainfont);
 }
 
+.body {
+  background-color: #F4F5F7;
+}
+
 .intro {
   display: flex;
   flex-direction: column;
@@ -64,7 +68,7 @@
 
 .main {
   width: 100%;
-  background-image: url("../images/shapes-backgroud.png");
+  background-image: url("../images/Header\ bg.png"), url("../images/header-background-mobile.png");
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -175,7 +179,7 @@ ul {
 }
 
 .project {
-  margin-top: 40px;
+  margin-top: 88px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -363,15 +367,18 @@ ul {
 }
 
 .about-me {
+  margin-top: 40px;
   width: 100%;
   display: flex;
-  padding-left: 6.4%;
+  background-image: url("../images/Base\ about\ my\ self.png");
+  background-size: cover;
 }
 
 .about-me-content {
   display: flex;
   flex-direction: column;
   width: 100%;
+  padding-left: 6.4%;
 }
 
 .about-intro {
@@ -487,6 +494,7 @@ ul {
   border-radius: 8px;
   align-items: center;
   flex: none;
+  margin-bottom: 10px;
 }
 
 #subcat1 .subcat-logo {
@@ -532,7 +540,7 @@ ul {
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-image: url("../images/contact-me-shapes-background.png"), url("../images/contact-me-blue-background.png");
+  background-image: url("../images/contact\ form\ shapes-mobile.png"), url("../images/contact-me-blue-background.png");
   background-size: cover;
   text-align: center;
   justify-content: center;
@@ -655,12 +663,13 @@ ul {
 
   .navlink {
     display: inline;
-    justify-self: right;
+    margin-right: 20px;
   }
 
   .main {
     padding-top: 100px;
     padding-bottom: 250px;
+    background-image: url("../images/Header\ bg.png"), url("../images/header\ background\ shape-desktop.png");
   }
 
   .projects {
@@ -758,7 +767,10 @@ ul {
   }
 
   .about-me {
-    padding-left: 10%;
+    background-image: url("../images/about\ myself\ -\ background-\ shape-\ desktop.png");
+    background-size: cover;
+    padding: 0%;
+    height: 924PX;
   }
 
   .about-me-content {
@@ -767,6 +779,7 @@ ul {
     width: 80.3%;
     align-items: baseline;
     flex-wrap: nowrap;
+    padding-left: 10%;
   }
 
   .about-intro {
@@ -784,6 +797,7 @@ ul {
     flex-direction: row;
     justify-items: left;
     margin-left: -10px;
+    gap: 12px;
   }
 
   .subcategorie {
@@ -801,6 +815,11 @@ ul {
 
   .separator-line {
     width: 640px;
+  }
+
+  .contactme {
+    background-image: url("../images/contact\ form\ background\ shapes.png"), url("../images/contact\ form-\ background-shape-desktop.png");
+    background-size: cover;
   }
 
   .contactme .contactme-intro {
