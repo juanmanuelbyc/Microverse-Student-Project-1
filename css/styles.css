@@ -704,6 +704,7 @@ ul {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    transition: all 0.5s ease-out;
   }
 
   #project3 .pimage {
@@ -837,4 +838,5 @@ ul {
   .input-textarea {
     width: 447px;
   }
+  
 }
