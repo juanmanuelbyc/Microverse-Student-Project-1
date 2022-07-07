@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Space+Mono&display=swap');
 
 :root {
-  --mainfont: Poppins, Times, serif;
+  --mainfont: poppins, Times, serif;
 }
 
 * {
@@ -16,7 +16,7 @@
 .intro {
   display: flex;
   flex-direction: column;
-} 
+}
 
 .header {
   width: 100%;
@@ -155,7 +155,7 @@ ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(327px, 1fr));
   justify-content: space-around;
-  align-items:start;
+  align-items: start;
   column-gap: 10px;
   margin-left: 6.4%;
 }
