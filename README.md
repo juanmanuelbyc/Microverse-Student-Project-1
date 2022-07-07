@@ -13,7 +13,6 @@ We are trying to apply what we have studied regarding:
 
 - HTML, CSS
 
-
 ## Authors
 
 👤 **Author1**
@@ -35,3 +34,9 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project doesn't have or require any license.
+
+## Preview
+
+This is how this project looks like
+
+[here](images/screenshot.jpg)
