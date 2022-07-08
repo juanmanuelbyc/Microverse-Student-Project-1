@@ -854,8 +854,7 @@ ul {
   #project1 .pimage:hover, 
   #project2 .pimage:hover,
   #project3 .pimage:hover,
-  #project4 .pimage:hover
-  {
+  #project4 .pimage:hover {
     width: 55%;
   }
 }
