@@ -590,6 +590,11 @@ ul {
   font-weight: 400;
   font-size: 17px;
   line-height: 20px;
+  transition: all 0.5s ease-out;
+}
+
+.input-name:hover {
+  background: rgba(255,255,255,0.637);
 }
 
 .input-email {
