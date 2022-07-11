@@ -35,3 +35,7 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project doesn't have or require any license.
+
+## Online version
+
+Feel free to check the [Online version](https://juanmanuelbyc.github.io).
