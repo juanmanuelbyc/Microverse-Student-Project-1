@@ -45,4 +45,4 @@ This is how this project looks like
 
 Checkout the online version
 
-[here!](https://juanmanuelbyc.github.io)
+[here!](https://juanmanuelbyc.github.io/Microverse-Student-Project-1/)
