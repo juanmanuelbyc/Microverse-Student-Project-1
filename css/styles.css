@@ -140,36 +140,6 @@ ul {
   gap: 12px;
 }
 
-.twitter-icon {
-  background-image: url("../images/twitter-icon.png");
-  width: 20px;
-  height: 20px;
-}
-
-.linkedin-icon {
-  background-image: url("../images/linkedin-icon.png");
-  width: 20px;
-  height: 20px;
-}
-
-.m-icon {
-  background-image: url("../images/m-icon.png");
-  width: 20px;
-  height: 20px;
-}
-
-.cat-icon {
-  background-image: url("../images/cat-icon.png");
-  width: 20px;
-  height: 20px;
-}
-
-.fingers-icon {
-  background-image: url("../images/fingers-icon.png");
-  width: 20px;
-  height: 20px;
-}
-
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(327px, 1fr));
