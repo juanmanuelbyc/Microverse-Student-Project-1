@@ -19,7 +19,7 @@
           <a class="navlink" href="#portfolio">Portfolio</a>
           <a class="navlink" href="#about">About</a>
           <a class="navlink" href="#contactme">Contact</a>
-          <a class="menu-icon" href="#"></a>
+          <a class="menu-icon" href="#menu-icon"></a>
         </div>
       </nav>
     </header>
@@ -37,11 +37,11 @@
         <h3 class="connect-text">LET'S CONNECT</h3>
         <div class="socialmedia-icons">
           <ul>
-            <li class="twitter-icon"><a href=""></a></li>
-            <li class="linkedin-icon"><a href=""></a></li>
-            <li class="m-icon"><a href=""></a></li>
-            <li class="cat-icon"><a href=""></a></li>
-            <li class="fingers-icon"><a href=""></a></li>
+            <li class="twitter-icon"><a href="#"></a></li>
+            <li class="linkedin-icon"><a href="#"></a></li>
+            <li class="m-icon"><a href="#"></a></li>
+            <li class="cat-icon"><a href="#"></a></li>
+            <li class="fingers-icon"><a href="#"></a></li>
           </ul>
         </div>
       </div>
@@ -242,13 +242,17 @@
     <form class="contactme-form" action="https://formspree.io/f/mpzbgqyj" method="post">
       <ul class="form-elements-list">
         <li>
+          <label for="user-name" id="name"></label>
           <input class="input-name" type="text" id="user-name" placeholder="Your name" maxlength="30" required>
         </li>
         <li>
+          <label for="user-email" id="email"></label>
           <input class="input-email" type="email" id="user-email" required placeholder="your@email">
         </li>
         <li>
-          <textarea class="input-textarea" required maxlength="500" placeholder="Write your message here"></textarea>
+          <label for="user-message" id="message"></label>
+          <textarea class="input-textarea" id="user-message" required maxlength="500"
+            placeholder="Write your message here"></textarea>
         </li>
         <li>
           <button class="submit-button" name="submit">Get in touch</button>
