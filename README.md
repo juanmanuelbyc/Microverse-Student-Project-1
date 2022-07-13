@@ -39,10 +39,10 @@ This project doesn't have or require any license.
 
 This is how this project looks like
 
-[here](images/screenshot.jpg)
+[here!](images/screenshot.jpg)
 
 ## Online version
 
 Checkout the online version
 
-[here](https://juanmanuelbyc.github.io)
+[here!](https://juanmanuelbyc.github.io/Microverse-Student-Project-1/)
