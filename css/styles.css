@@ -46,7 +46,7 @@ div.mobile-menu{
   line-height: 44px;
   gap: 1.5rem;
   padding-top: 1rem;
-  
+  visibility: hidden;
 }
 
 
@@ -55,7 +55,7 @@ div.mobile-menu{
   text-decoration: none;
 }
 
-.close-bttn{ 
+.close-btn{ 
   align-self: flex-end;
   padding-right: 4rem;
 }
