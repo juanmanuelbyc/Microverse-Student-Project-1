@@ -27,6 +27,31 @@
   height: 9%;
 }
 
+.mobile-menu{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 100vh;
+  height: 100%;
+  background-color: #6070FF;
+  opacity: 0.9;
+  padding: 2%;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  
+}
+
+.m-navlink{ 
+  color: white;
+}
+
+.close-bttn{ 
+  align-self: flex-end;
+}
+
 .navbar {
   height: 100%;
   padding-left: 30px;
