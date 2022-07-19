@@ -1,3 +1,14 @@
+const projects = {
+  project1: {
+    pname: 'Tonic',
+    description: 'xxxxxxxxx'
+  },
+  project2: {
+    pname: 'Tonic',
+    description: 'xxxxxxxxx'
+  }
+};
+
 const btn = document.querySelector('#hamburguer-btn');
 const closeBtn = document.querySelector('.close-btn');
 const mobilenavlinks = document.querySelectorAll('.m-navlink');
@@ -25,3 +36,5 @@ mobilenavlinks.forEach((el) => {
     });
   });
 });
+
+document.getElementById("p1-title").innerText = "New zzzzz";
