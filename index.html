@@ -9,9 +9,16 @@
   <title>Juan Diaz Portfolio</title>
 </head>
 
-<body class="body">
 
-  <section class="intro">
+
+<body class="body">
+  <div id="mobile-menu" class="mobile-menu">
+    <a class="m-navlink close-btn text-decoration-none" href="#">X</a>
+    <a class="m-navlink text-decoration-none" href="#portfolio">Portfolio</a>
+    <a class="m-navlink" href="#about">About</a>
+    <a class="m-navlink" href="#contactme">Contact</a>
+  </div>
+  <section id="intro" class="intro section">
     <header>
       <nav class="navbar">
         <a class="my-logo" href="#">My Logo</a>
@@ -19,7 +26,7 @@
           <a class="navlink" href="#portfolio">Portfolio</a>
           <a class="navlink" href="#about">About</a>
           <a class="navlink" href="#contactme">Contact</a>
-          <a class="menu-icon" href="#"></a>
+          <a id="hamburguer-btn" class="menu-icon" href="#"></a>
         </div>
       </nav>
     </header>
@@ -48,7 +55,7 @@
     </div>
   </section>
 
-  <section class="projects" id="portfolio">
+  <section class="projects section" id="portfolio">
     <div class="project" id="project1">
       <div class="pimage"></div>
       <div class="projectdetails">
@@ -158,7 +165,7 @@
     </div>
   </section>
 
-  <section class="about-me" id="about">
+  <section class="about-me section" id="about">
     <div class="about-me-content">
       <div class="about-intro">
         <div class="primary-text-container">
@@ -231,7 +238,7 @@
       </div>
     </div>
   </section>
-  <section class="contactme" id="contactme">
+  <section class="contactme section" id="contactme">
     <div class="contactme-title">
       <h2>Contact me</h2>
     </div>
@@ -258,6 +265,6 @@
     </form>
 
   </section>
+  <script src="js/index.js"></script>
 </body>
-
 </html>
