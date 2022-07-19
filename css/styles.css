@@ -25,13 +25,6 @@
   position: relative;
 }
 
-/* .site-wrapper {
-  width: 100%;
-  background-color: #f4f5f7;
-  filter: none;
-  overflow-x: hidden;
-} */
-
 .intro {
   display: flex;
   flex-direction: column;
