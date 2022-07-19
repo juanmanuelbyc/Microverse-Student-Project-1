@@ -1,11 +1,51 @@
 const projects = {
   project1: {
     pname: 'Tonic',
-    description: 'xxxxxxxxx'
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    client: 'CANOPY',
+    role: 'Back End Dev',
+    year: '2015',
+    tech1: 'HTML',
+    tech2: 'css',
+    tech3: 'JavaScript',
+    smallimagelink: 'url("../images/p1image.png")',
+    bigimagelink: 'url("../images/p1imagebig.jpg")'
   },
   project2: {
-    pname: 'Tonic',
-    description: 'xxxxxxxxx'
+    pname: 'Multi-post Stories',
+    description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+    role: 'Full Stack Dev',
+    year: '2015',
+    client: 'Facebook',
+    tech1: 'HTML',
+    tech2: 'Ruby on rails',
+    tech3: 'css',
+    smallimagelink: 'url("../images/p2image.png")',
+    bigimagelink: 'url("../images/p1imagebig.jpg")'
+  },
+  project3: {
+    pname: 'Facebook 360',
+    description: 'Exploring the future of media in Facebook first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
+    role: 'Full Stack Dev',
+    client: 'Facebook',
+    year: '2015',
+    tech1: 'HTML',
+    tech2: 'Ruby on rails',
+    tech3: 'css',
+    smallimagelink: 'url("../images/p3image.png")',
+    bigimagelink: 'url("../images/p1imagebig.jpg")'
+  },
+  project4: {
+    pname: 'Uber Navigation',
+    description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+    client: 'Uber',
+    role: 'Lead Developer',
+    year: '2018',
+    tech1: 'HTML',
+    tech2: 'Ruby on rails',
+    tech3: 'css',
+    smallimagelink: 'url("../images/p4image.png")',
+    bigimagelink: 'url("../images/p1imagebig.jpg")'
   }
 };
 
@@ -37,4 +77,3 @@ mobilenavlinks.forEach((el) => {
   });
 });
 
-document.getElementById("p1-title").innerText = "New zzzzz";

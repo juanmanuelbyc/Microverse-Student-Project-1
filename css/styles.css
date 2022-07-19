@@ -226,26 +226,22 @@ ul {
   margin-bottom: 5px;
   width: 295px;
   height: 220px;
-  background-image: url("../images/p1image.png");
 }
 
 #project2 .pimage {
   margin-bottom: 5px;
   width: 295px;
   height: 220px;
-  background-image: url("../images/p2image.png");
 }
 
 #project3 .pimage {
   width: 295px;
   height: 220px;
-  background-image: url("../images/p3image.png");
 }
 
 #project4 .pimage {
   width: 295px;
   height: 220px;
-  background-image: url("../images/p4image.png");
 }
 
 .p-title {
@@ -268,7 +264,7 @@ ul {
 
 .details-list {
   display: flex;
-  width: 295px;
+  width: 320px;
   height: 36px;
   align-items: center;
 }
@@ -290,7 +286,7 @@ ul {
 }
 
 .role {
-  width: 90px;
+  width:fit-content;
   height: 16px;
   font-style: normal;
   font-weight: 600;
@@ -311,12 +307,13 @@ ul {
 
 .p-description {
   width: 295px;
-  height: 76px;
+  height:fit-content;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
   color: #344563;
+  padding-bottom: 15px;
 }
 
 .languages-list {
@@ -700,6 +697,8 @@ ul {
     grid-template-rows: 25% 25% 25% 25%;
     justify-items: left;
     padding-left: 5%;
+    display: flex;
+    flex-direction: column;
   }
 
   .project {
@@ -714,7 +713,6 @@ ul {
   #project1 .pimage {
     width: 48.05%;
     height: auto;
-    background-image: url("../images/p1imagebig.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -724,7 +722,6 @@ ul {
   #project2 .pimage {
     width: 48.05%;
     height: auto;
-    background-image: url("../images/p1imagebig.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -734,7 +731,6 @@ ul {
   #project3 .pimage {
     width: 48.05%;
     height: auto;
-    background-image: url("../images/p1imagebig.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -744,7 +740,6 @@ ul {
   #project4 .pimage {
     width: 48.05%;
     height: auto;
-    background-image: url("../images/p1imagebig.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -762,7 +757,7 @@ ul {
     height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-bottom: 10%;
     padding-left: 15px;
     padding-top: 35px;
@@ -774,6 +769,7 @@ ul {
     height: 40px;
     flex-wrap: nowrap;
     align-items: center;
+    margin-bottom: 10px;
   }
 
   .client,
