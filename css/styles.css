@@ -13,10 +13,24 @@
   font-family: var(--mainfont);
 }
 
+.html {
+  overflow-x: hidden;
+}
+
 .body {
+  width: 100%;
   background-color: #f4f5f7;
   filter: none;
+  overflow-x: hidden;
+  position: relative
 }
+
+/* .site-wrapper {
+  width: 100%;
+  background-color: #f4f5f7;
+  filter: none;
+  overflow-x: hidden;
+} */
 
 .intro {
   display: flex;
@@ -29,6 +43,7 @@
 }
 
 div.mobile-menu {
+  width: 100%;
   position: fixed;
   z-index: 10;
   padding: 2rem;
@@ -58,8 +73,7 @@ div.mobile-menu {
 }
 
 .close-btn {
-  align-self: flex-end;
-  padding-right: 4rem;
+  padding-left: 80vw;
 }
 
 .navbar {
