@@ -142,44 +142,44 @@ function createPopUp(el) {
   const project = el.closest('.project');
   const div = document.createElement('div');
   div.className = 'popUp';
-  div.innerHTML = '<div class="cardcontainer">\
-     <div class="p-title">\
-       <h2 class="titletext">xxxxx</h2>\
-       <a class="card-close-btn" href = "">x</a>\
-     </div>\
-     <ul class="details-list">\
-       <li class="client">xxxx</li>\
-       <li class="spacedot"></li>\
-       <li class="role">xxxxx</li>\
-       <li class="spacedot"></li>\
-       <li class="year">xxxx</li>\
-     </ul>\
-     <div class="cimage"></div>\
-     <div class="detailsproject">\
-       <div class="p-description">\
-         <p class="pdescriptiontext">xxxx</p>\
-       </div>\
-       <div class="langsAndBtns">\
-         <div class="languages">\
-           <ul class="languages-list">\
-             <li class="lang tech1">xxx</li>\
-             <li class="lang tech2">xxx</li>\
-             <li class="lang tech3">xxx</li>\
-           </ul>\
-         </div>\
-         <div class="btns">\
-           <div class="live-btn btn">\
-             <h3>See Live</h3>\
-             <div class="live-icon"></div>\
-           </div>\
-           <div class="btn src-btn">\
-             <h3>See Source</h3>\
-             <div class="src-icon"></div>\
-           </div>\
-         </div>\
-       </div>\
-     </div>\
-   </div>';
+  div.innerHTML = `<div class="cardcontainer">
+     <div class="p-title">
+       <h2 class="titletext">xxxxx</h2>
+       <a class="card-close-btn" href = "">x</a>
+     </div>
+     <ul class="details-list">
+       <li class="client">xxxx</li>
+       <li class="spacedot"></li>
+       <li class="role">xxxxx</li>
+       <li class="spacedot"></li>
+       <li class="year">xxxx</li>
+     </ul>
+     <div class="cimage"></div>
+     <div class="detailsproject">
+       <div class="p-description">
+         <p class="pdescriptiontext">xxxx</p>
+       </div>
+       <div class="langsAndBtns">
+         <div class="languages">
+           <ul class="languages-list">
+             <li class="lang tech1">xxx</li>
+             <li class="lang tech2">xxx</li>
+             <li class="lang tech3">xxx</li>
+           </ul>
+         </div>
+         <div class="btns">
+           <div class="live-btn btn">
+             <h3>See Live</h3>
+             <div class="live-icon"></div>
+           </div>
+           <div class="btn src-btn">
+             <h3>See Source</h3>
+             <div class="src-icon"></div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>`;
   div.style.position = 'fixed';
 
   const myname = project.id;
