@@ -126,22 +126,23 @@ const projectz = document.querySelectorAll('.project');
 
 for (let i = 0; i < projectz.length; i += 1) {
   const project = projectz[i];
-  project.querySelector('.titletext').innerText = projects['project' + ((i + 1).toString())]['pname'];
-  project.querySelector('.pdescriptiontext').innerText = projects['project' + ((i + 1).toString())]['description'];
-  project.querySelector('.client').innerText = projects['project' + ((i + 1).toString())]['client'];
-  project.querySelector('.role').innerText = projects['project' + ((i + 1).toString())]['role'];
-  project.querySelector('.year').innerText = projects['project' + ((i + 1).toString())]['year'];
-  project.querySelector('.tech1').innerText = projects['project' + ((i + 1).toString())]['tech1'];
-  project.querySelector('.tech2').innerText = projects['project' + ((i + 1).toString())]['tech2'];
-  project.querySelector('.tech3').innerText = projects['project' + ((i + 1).toString())]['tech3'];
-  project.querySelector('.pimage').style.backgroundImage = projects['project'+((i+1).toString())]['smallimagelink'];
+  const pnumber = 'project' + ((i + 1).toString());
+  project.querySelector('.titletext').innerText = projects[pnumber].pname;
+  project.querySelector('.pdescriptiontext').innerText = projects[pnumber].description;
+  project.querySelector('.client').innerText = projects[pnumber].client;
+  project.querySelector('.role').innerText = projects[pnumber].role;
+  project.querySelector('.year').innerText = projects[pnumber].year;
+  project.querySelector('.tech1').innerText = projects[pnumber].tech1;
+  project.querySelector('.tech2').innerText = projects[pnumber].tech2;
+  project.querySelector('.tech3').innerText = projects[pnumber].tech3;
+  project.querySelector('.pimage').style.backgroundImage = projects[pnumber].smallimagelink;
 };
 
 function createPopUp(el) {
   const project = el.closest('.project');
   const div = document.createElement('div');
   div.className = 'popUp';
-  div.innerHTML = 
+  div.innerHTML =
   '<div class="cardcontainer">\
      <div class="p-title">\
        <h2 class="titletext">xxxxx</h2>\
@@ -181,18 +182,18 @@ function createPopUp(el) {
      </div>\
    </div>';
   div.style.position = 'fixed';
-  
-  let myname = project.id;
 
-  div.querySelector('.titletext').innerText = projects[myname]['pname'];
-  div.querySelector('.pdescriptiontext').innerText = projects[myname]['longdescription'];
-  div.querySelector('.client').innerText = projects[myname]['client'];
-  div.querySelector('.role').innerText = projects[myname]['role'];
-  div.querySelector('.year').innerText = projects[myname]['year'];
-  div.querySelector('.tech1').innerText = projects[myname]['tech1'];
-  div.querySelector('.tech2').innerText = projects[myname]['tech2'];
-  div.querySelector('.tech3').innerText = projects[myname]['tech3'];
-  div.querySelector('.cimage').style.backgroundImage = projects[myname]['smallimagelink'];
+  const myname = project.id;
+
+  div.querySelector('.titletext').innerText = projects[myname].pname;
+  div.querySelector('.pdescriptiontext').innerText = projects[myname].longdescription;
+  div.querySelector('.client').innerText = projects[myname].client;
+  div.querySelector('.role').innerText = projects[myname].role;
+  div.querySelector('.year').innerText = projects[myname].year;
+  div.querySelector('.tech1').innerText = projects[myname].tech1;
+  div.querySelector('.tech2').innerText = projects[myname].tech2;
+  div.querySelector('.tech3').innerText = projects[myname].tech3;
+  div.querySelector('.cimage').style.backgroundImage = projects[myname].smallimagelink;
   div.querySelector('.live-icon').style.backgroundImage = 'url("../images/liveicon.png")';
   div.querySelector('.src-icon').style.backgroundImage = 'url("../images/catvector.png")';
   document.body.prepend(div);
