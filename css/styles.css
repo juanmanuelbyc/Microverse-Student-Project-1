@@ -38,12 +38,12 @@
 
 div.mobile-menu {
   width: 100%;
-  position: fixed;
   z-index: 10;
   padding: 2rem;
   background-color: #6070ff;
   backdrop-filter: blur(100px);
   opacity: 0.9;
+  position: fixed;
 }
 
 .mobile-menu {
@@ -61,13 +61,40 @@ div.mobile-menu {
   visibility: hidden;
 }
 
+.popUp {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  background: rgba(193, 199, 208, 0.8);
+}
+
+.cardcontainer {
+  padding: 15px;
+  position: fixed;
+  align-self:stretch;
+  margin: 1vh auto 1vh auto;
+  width: 85%;
+  max-width: 1100px;
+  height: 80fr;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  background: #FFFFFF;
+  opacity: 1;
+  border: 1px solid #EBECF0;
+  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+  border-radius: 16px;
+}
+
 .m-navlink {
   color: white;
   text-decoration: none;
 }
 
 .close-btn {
-  padding-left: 80vw;
+  padding-left: 80%;
 }
 
 .navbar {
@@ -183,6 +210,25 @@ ul {
   gap: 12px;
 }
 
+.pimage {
+  width: 295px;
+  height: 220px;
+  margin-bottom: 5px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.cimage {
+  width: 350px;
+  height: 33vh;
+  margin: 0 auto 5px auto;
+  align-self: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(327px, 1fr));
@@ -206,52 +252,18 @@ ul {
   justify-content: space-around;
 }
 
-#project1 {
-  order: 0;
-}
-
-#project2 {
-  order: 1;
-}
-
-#project3 {
-  order: 2;
-}
-
-#project4 {
-  order: 3;
-}
-
-#project1 .pimage {
-  margin-bottom: 5px;
-  width: 295px;
-  height: 220px;
-}
-
-#project2 .pimage {
-  margin-bottom: 5px;
-  width: 295px;
-  height: 220px;
-}
-
-#project3 .pimage {
-  width: 295px;
-  height: 220px;
-}
-
-#project4 .pimage {
-  width: 295px;
-  height: 220px;
-}
-
 .p-title {
-  width: 220px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  align-items: center;
+  width: 100%;
+  display:inline-flex;
+  justify-content: space-between;
   text-align: left;
   align-self: flex-start;
+  align-items: center;
+}
+
+.card-close-btn {
+  align-self:baseline;
+  text-decoration: none;
 }
 
 .p-title h2 {
@@ -306,7 +318,7 @@ ul {
 }
 
 .p-description {
-  width: 295px;
+  width: 100%;
   height:fit-content;
   font-style: normal;
   font-weight: 400;
@@ -340,15 +352,16 @@ ul {
   color: #525252;
 }
 
-.project-access {
+.btn{
   box-sizing: border-box;
+  background: #fff;
   margin-top: 25px;
   margin-bottom: 25px;
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 12px;
-  width: 132px;
+  width: fit-content;
   height: 48px;
   border: 1px solid #6070ff;
   border-radius: 8px;
@@ -359,22 +372,51 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: #396df2;
+  gap: 4px;
 }
 
-.project-access:hover {
+
+.btn h3{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #396df2;
+}
+
+.btns {
+  width: 100%;
+  display: flex;
+  gap: 15px;
+}
+
+.btn:hover {
   background: #6070ff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   color: #fff;
 }
 
-.project-access:active {
+.btn:active {
   background: #2230d2;
   color: #5e6c84;
 }
 
-.project-access:disabled {
+.btn:disabled {
   border: 1px solid #c1c7d0;
   color: #5e6c84;
+}
+
+.live-icon {
+  width: 18px;
+  height: 18px;
+  background-size: cover;
+}
+
+.src-icon {
+  width: 18px;
+  height: 18px;
 }
 
 .about-me {
@@ -390,6 +432,10 @@ ul {
   flex-direction: column;
   width: 100%;
   padding-left: 6.4%;
+}
+
+.resume-access {
+  margin-left: 6.4%;
 }
 
 .about-intro {
@@ -409,44 +455,6 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.resume-access {
-  margin-left: 6.4%;
-  box-sizing: border-box;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 162px;
-  height: 48px;
-  border: 1px solid #093195;
-  border-radius: 8px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #396df2;
-  justify-content: center;
-}
-
-.resume-access:hover {
-  background: #6070ff;
-  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
-  color: #fff;
-}
-
-.resume-access:active {
-  background: #2230d2;
-  color: #5e6c84;
-}
-
-.resume-access:disabled {
-  border: 1px solid #c1c7d0;
-  color: #5e6c84;
 }
 
 .categories-info {
@@ -710,7 +718,7 @@ ul {
     box-sizing: border-box;
   }
 
-  #project1 .pimage {
+  .pimage {
     width: 48.05%;
     height: auto;
     background-size: contain;
@@ -719,31 +727,14 @@ ul {
     transition: all 0.5s ease-out;
   }
 
-  #project2 .pimage {
-    width: 48.05%;
-    height: auto;
-    background-size: contain;
+  .cimage {
+    width: 55%;
+    height: 47vh;
+    margin: 5px auto 15px auto;
+    align-self: center;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    transition: all 0.5s ease-out;
-  }
-
-  #project3 .pimage {
-    width: 48.05%;
-    height: auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: all 0.5s ease-out;
-  }
-
-  #project4 .pimage {
-    width: 48.05%;
-    height: auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: all 0.5s ease-out;
   }
 
   .p-title h2 {
@@ -761,6 +752,18 @@ ul {
     padding-bottom: 10%;
     padding-left: 15px;
     padding-top: 35px;
+  }
+
+  .detailsproject {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+  }
+
+  .langsAndBtns {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
   }
 
   .details-list {
@@ -785,9 +788,10 @@ ul {
   .p-description {
     font-size: 16px;
     line-height: 24px;
-    width: fit-content;
+    width: 100%;
     padding-right: 60px;
   }
+
 
   .about-me {
     background-image: url("../images/about\ myself\ -\ background-\ shape-\ desktop.png");
@@ -867,4 +871,5 @@ ul {
   #project4 .pimage:hover {
     width: 55%;
   }
+
 }
