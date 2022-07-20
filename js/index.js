@@ -182,20 +182,7 @@ function createPopUp(el) {
    </div>`;
   div.style.position = 'fixed';
 
-  const myname = project.id;
-
-  div.querySelector('.titletext').innerText = projects[myname].pname;
-  div.querySelector('.pdescriptiontext').innerText = projects[myname].longdescription;
-  div.querySelector('.client').innerText = projects[myname].client;
-  div.querySelector('.role').innerText = projects[myname].role;
-  div.querySelector('.year').innerText = projects[myname].year;
-  div.querySelector('.tech1').innerText = projects[myname].tech1;
-  div.querySelector('.tech2').innerText = projects[myname].tech2;
-  div.querySelector('.tech3').innerText = projects[myname].tech3;
-  div.querySelector('.cimage').style.backgroundImage = projects[myname].smallimagelink;
-  div.querySelector('.live-icon').style.backgroundImage = 'url("../images/liveicon.png")';
-  div.querySelector('.src-icon').style.backgroundImage = 'url("../images/catvector.png")';
-  document.body.prepend(div);
+  
 }
 
 btnSeePrjct.forEach((el) => {
