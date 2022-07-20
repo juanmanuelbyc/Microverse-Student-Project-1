@@ -136,14 +136,13 @@ for (let i = 0; i < projectz.length; i += 1) {
   project.querySelector('.tech2').innerText = projects[pnumber].tech2;
   project.querySelector('.tech3').innerText = projects[pnumber].tech3;
   project.querySelector('.pimage').style.backgroundImage = projects[pnumber].smallimagelink;
-};
+}
 
 function createPopUp(el) {
   const project = el.closest('.project');
   const div = document.createElement('div');
   div.className = 'popUp';
-  div.innerHTML =
-  '<div class="cardcontainer">\
+  div.innerHTML = '<div class="cardcontainer">\
      <div class="p-title">\
        <h2 class="titletext">xxxxx</h2>\
        <a class="card-close-btn" href = "">x</a>\
