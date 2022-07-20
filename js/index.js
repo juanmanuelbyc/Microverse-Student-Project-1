@@ -62,9 +62,9 @@ const projects = {
 };
 
 for (let i = 0; i < 4; i += 1) {
-  let numbertotext = (i + 1).toString();
-  let div = document.createElement('div');
-  div.id = 'project'+numbertotext;
+  const numbertotext = (i + 1).toString();
+  const div = document.createElement('div');
+  div.id = 'project' + numbertotext;
   div.className = 'project';
   div.innerHTML = '<div class="pimage"></div>\
     <div class="projectdetails">\
@@ -91,7 +91,7 @@ for (let i = 0; i < 4; i += 1) {
       <div class="project-access btn">See project</div>\
     </div>';
   document.querySelector('.projects').appendChild(div);
-};
+}
 
 const btn = document.querySelector('#hamburguer-btn');
 const btnSeePrjct = document.querySelectorAll('.project-access');
@@ -122,24 +122,24 @@ mobilenavlinks.forEach((el) => {
   });
 });
 
-let projectz = document.querySelectorAll('.project');
+const projectz = document.querySelectorAll('.project');
 
 for (let i = 0; i < projectz.length; i += 1) {
-let project = projectz[i];
-project.querySelector('.titletext').innerText = projects['project'+((i+1).toString())]['pname'];
-project.querySelector('.pdescriptiontext').innerText = projects['project'+((i+1).toString())]['description'];
-project.querySelector('.client').innerText = projects['project'+((i+1).toString())]['client'];
-project.querySelector('.role').innerText = projects['project'+((i+1).toString())]['role'];
-project.querySelector('.year').innerText = projects['project'+((i+1).toString())]['year'];
-project.querySelector('.tech1').innerText = projects['project'+((i+1).toString())]['tech1'];
-project.querySelector('.tech2').innerText = projects['project'+((i+1).toString())]['tech2'];
-project.querySelector('.tech3').innerText = projects['project'+((i+1).toString())]['tech3'];
-project.querySelector('.pimage').style.backgroundImage = projects['project'+((i+1).toString())]['smallimagelink'];
+  const project = projectz[i];
+  project.querySelector('.titletext').innerText = projects['project' + ((i + 1).toString())]['pname'];
+  project.querySelector('.pdescriptiontext').innerText = projects['project' + ((i + 1).toString())]['description'];
+  project.querySelector('.client').innerText = projects['project' + ((i + 1).toString())]['client'];
+  project.querySelector('.role').innerText = projects['project' + ((i + 1).toString())]['role'];
+  project.querySelector('.year').innerText = projects['project' + ((i + 1).toString())]['year'];
+  project.querySelector('.tech1').innerText = projects['project' + ((i + 1).toString())]['tech1'];
+  project.querySelector('.tech2').innerText = projects['project' + ((i + 1).toString())]['tech2'];
+  project.querySelector('.tech3').innerText = projects['project' + ((i + 1).toString())]['tech3'];
+  project.querySelector('.pimage').style.backgroundImage = projects['project'+((i+1).toString())]['smallimagelink'];
 };
 
 function createPopUp(el) {
-  let project = el.closest('.project');
-  let div = document.createElement('div');
+  const project = el.closest('.project');
+  const div = document.createElement('div');
   div.className = 'popUp';
   div.innerHTML = 
   '<div class="cardcontainer">\
@@ -182,24 +182,24 @@ function createPopUp(el) {
    </div>';
   div.style.position = 'fixed';
   
-let myname = project.id;
+  let myname = project.id;
 
-div.querySelector('.titletext').innerText = projects[myname]['pname'];
-div.querySelector('.pdescriptiontext').innerText = projects[myname]['longdescription'];
-div.querySelector('.client').innerText = projects[myname]['client'];
-div.querySelector('.role').innerText = projects[myname]['role'];
-div.querySelector('.year').innerText = projects[myname]['year'];
-div.querySelector('.tech1').innerText = projects[myname]['tech1'];
-div.querySelector('.tech2').innerText = projects[myname]['tech2'];
-div.querySelector('.tech3').innerText = projects[myname]['tech3'];
-div.querySelector('.cimage').style.backgroundImage = projects[myname]['smallimagelink'];
-div.querySelector('.live-icon').style.backgroundImage = 'url("../images/liveicon.png")';
-div.querySelector('.src-icon').style.backgroundImage = 'url("../images/catvector.png")';
-document.body.prepend(div);
+  div.querySelector('.titletext').innerText = projects[myname]['pname'];
+  div.querySelector('.pdescriptiontext').innerText = projects[myname]['longdescription'];
+  div.querySelector('.client').innerText = projects[myname]['client'];
+  div.querySelector('.role').innerText = projects[myname]['role'];
+  div.querySelector('.year').innerText = projects[myname]['year'];
+  div.querySelector('.tech1').innerText = projects[myname]['tech1'];
+  div.querySelector('.tech2').innerText = projects[myname]['tech2'];
+  div.querySelector('.tech3').innerText = projects[myname]['tech3'];
+  div.querySelector('.cimage').style.backgroundImage = projects[myname]['smallimagelink'];
+  div.querySelector('.live-icon').style.backgroundImage = 'url("../images/liveicon.png")';
+  div.querySelector('.src-icon').style.backgroundImage = 'url("../images/catvector.png")';
+  document.body.prepend(div);
 }
 
 btnSeePrjct.forEach((el) => {
   el.addEventListener('click', () => {
-    createPopUp (el);
+    createPopUp(el);
   });
 });
