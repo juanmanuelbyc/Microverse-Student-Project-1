@@ -64,32 +64,32 @@ const projects = {
 for (let i = 0; i < 4; i += 1) {
   const numbertotext = (i + 1).toString();
   const div = document.createElement('div');
-  div.id = 'project' + numbertotext;
+  div.id = `project${numbertotext}`;
   div.className = 'project';
-  div.innerHTML = '<div class="pimage"></div>\
-    <div class="projectdetails">\
-      <div class="p-title">\
-        <h2 class="titletext">xxxxx</h2>\
-      </div>\
-      <ul class="details-list">\
-        <li class="client">xxxx</li>\
-        <li class="spacedot"></li>\
-        <li class="role">xxxxx</li>\
-        <li class="spacedot"></li>\
-        <li class="year">xxxx</li>\
-      </ul>\
-      <div class="p-description">\
-        <p class="pdescriptiontext">xxxx</p>\
-      </div>\
-      <div class="languages">\
-        <ul class="languages-list">\
-          <li class="lang tech1">xxx</li>\
-          <li class="lang tech2">xxx</li>\
-          <li class="lang tech3">xxx</li>\
-        </ul>\
-      </div>\
-      <div class="project-access btn">See project</div>\
-    </div>';
+  div.innerHTML = `<div class="pimage"></div>
+    <div class="projectdetails">
+      <div class="p-title">
+        <h2 class="titletext">xxxxx</h2>
+      </div>
+      <ul class="details-list">
+        <li class="client">xxxx</li>
+        <li class="spacedot"></li>
+        <li class="role">xxxxx</li>
+        <li class="spacedot"></li>
+        <li class="year">xxxx</li>
+      </ul>
+      <div class="p-description">
+        <p class="pdescriptiontext">xxxx</p>
+      </div>
+      <div class="languages">
+        <ul class="languages-list">
+          <li class="lang tech1">xxx</li>
+          <li class="lang tech2">xxx</li>
+          <li class="lang tech3">xxx</li>
+        </ul>
+      </div>
+      <div class="project-access btn">See project</div>
+    </div>`;
   document.querySelector('.projects').appendChild(div);
 }
 
@@ -126,7 +126,8 @@ const projectz = document.querySelectorAll('.project');
 
 for (let i = 0; i < projectz.length; i += 1) {
   const project = projectz[i];
-  const pnumber = 'project' + ((i + 1).toString());
+  const numbertotext = ((i + 1).toString());
+  const pnumber = `project${numbertotext}`;
   project.querySelector('.titletext').innerText = projects[pnumber].pname;
   project.querySelector('.pdescriptiontext').innerText = projects[pnumber].description;
   project.querySelector('.client').innerText = projects[pnumber].client;
