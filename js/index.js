@@ -122,22 +122,7 @@ mobilenavlinks.forEach((el) => {
   });
 });
 
-const projectz = document.querySelectorAll('.project');
 
-for (let i = 0; i < projectz.length; i += 1) {
-  const project = projectz[i];
-  const numbertotext = ((i + 1).toString());
-  const pnumber = `project${numbertotext}`;
-  project.querySelector('.titletext').innerText = projects[pnumber].pname;
-  project.querySelector('.pdescriptiontext').innerText = projects[pnumber].description;
-  project.querySelector('.client').innerText = projects[pnumber].client;
-  project.querySelector('.role').innerText = projects[pnumber].role;
-  project.querySelector('.year').innerText = projects[pnumber].year;
-  project.querySelector('.tech1').innerText = projects[pnumber].tech1;
-  project.querySelector('.tech2').innerText = projects[pnumber].tech2;
-  project.querySelector('.tech3').innerText = projects[pnumber].tech3;
-  project.querySelector('.pimage').style.backgroundImage = projects[pnumber].smallimagelink;
-}
 
 function createPopUp(el) {
   const project = el.closest('.project');
