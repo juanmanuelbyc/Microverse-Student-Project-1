@@ -319,7 +319,7 @@ ul {
 
 .p-description {
   width: 100%;
-  height: fit-content;
+  height: auto;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;

@@ -58,41 +58,40 @@ const projects = {
     bigimagelink: 'url("../images/p1imagebig.jpg")',
     livelink: 'url("www.google.com")',
     srclink: 'url("www.google.com")',
-  }
+  },
 };
 
-for (let i=0; i < 4; i+=1) {
+for (let i = 0; i < 4; i += 1) {
   let numbertotext = (i + 1).toString();
-  const div = document.createElement('div');
-  numbertotext = 'project' + numbertotext;
-  div.id = numbertotext;
+  let div = document.createElement('div');
+  div.id = 'project'+numbertotext;
   div.className = 'project';
-  div.innerHTML = `<div class="pimage"></div>
-    <div class="projectdetails">
-      <div class="p-title">
-        <h2 class="titletext">xxxxx</h2>
-      </div>
-      <ul class="details-list">
-        <li class="client">xxxx</li>
-        <li class="spacedot"></li>
-        <li class="role">xxxxx</li>
-        <li class="spacedot"></li>
-        <li class="year">xxxx</li>
-      </ul>
-      <div class="p-description">
-        <p class="pdescriptiontext">xxxx</p>
-      </div>
-      <div class="languages">
-        <ul class="languages-list">
-          <li class="lang tech1">xxx</li>
-          <li class="lang tech2">xxx</li>
-          <li class="lang tech3">xxx</li>
-        </ul>
-      </div>
-      <div class="project-access btn">See project</div>
-    </div>`;
+  div.innerHTML = '<div class="pimage"></div>\
+    <div class="projectdetails">\
+      <div class="p-title">\
+        <h2 class="titletext">xxxxx</h2>\
+      </div>\
+      <ul class="details-list">\
+        <li class="client">xxxx</li>\
+        <li class="spacedot"></li>\
+        <li class="role">xxxxx</li>\
+        <li class="spacedot"></li>\
+        <li class="year">xxxx</li>\
+      </ul>\
+      <div class="p-description">\
+        <p class="pdescriptiontext">xxxx</p>\
+      </div>\
+      <div class="languages">\
+        <ul class="languages-list">\
+          <li class="lang tech1">xxx</li>\
+          <li class="lang tech2">xxx</li>\
+          <li class="lang tech3">xxx</li>\
+        </ul>\
+      </div>\
+      <div class="project-access btn">See project</div>\
+    </div>';
   document.querySelector('.projects').appendChild(div);
-}
+};
 
 const btn = document.querySelector('#hamburguer-btn');
 const btnSeePrjct = document.querySelectorAll('.project-access');
@@ -123,86 +122,84 @@ mobilenavlinks.forEach((el) => {
   });
 });
 
-const projectz = document.querySelectorAll('.project');
+let projectz = document.querySelectorAll('.project');
 
-for (let i=0; i < projectz.length; i+=1) {
-  const project = projectz[i];
-  const index = 'project' + ((i + 1).toString());
-  project.querySelector('.titletext').innerText = projects[index]['pname'];
-  project.querySelector('.pdescriptiontext').innerText = projects[index]['description'];
-  project.querySelector('.client').innerText = projects[index]['client'];
-  project.querySelector('.role').innerText = projects[index].role;
-  project.querySelector('.year').innerText = projects[index].year;
-  project.querySelector('.tech1').innerText = projects[index].tech1;
-  project.querySelector('.tech2').innerText = projects[index].tech2;
-  project.querySelector('.tech3').innerText = projects[index].tech3;
-  project.querySelector('.pimage').style.backgroundImage = projects[index].smallimagelink;
+for (let i = 0; i < projectz.length; i += 1) {
+let project = projectz[i];
+project.querySelector('.titletext').innerText = projects['project'+((i+1).toString())]['pname'];
+project.querySelector('.pdescriptiontext').innerText = projects['project'+((i+1).toString())]['description'];
+project.querySelector('.client').innerText = projects['project'+((i+1).toString())]['client'];
+project.querySelector('.role').innerText = projects['project'+((i+1).toString())]['role'];
+project.querySelector('.year').innerText = projects['project'+((i+1).toString())]['year'];
+project.querySelector('.tech1').innerText = projects['project'+((i+1).toString())]['tech1'];
+project.querySelector('.tech2').innerText = projects['project'+((i+1).toString())]['tech2'];
+project.querySelector('.tech3').innerText = projects['project'+((i+1).toString())]['tech3'];
+project.querySelector('.pimage').style.backgroundImage = projects['project'+((i+1).toString())]['smallimagelink'];
 };
 
-function createPopUp (el){
+function createPopUp(el) {
   let project = el.closest('.project');
   let div = document.createElement('div');
   div.className = 'popUp';
   div.innerHTML = 
-  `<div class="cardcontainer">
-     <div class="p-title">
-       <h2 class="titletext">xxxxx</h2>
-       <a class="card-close-btn" href = "">x</a>
-     </div>
-     <ul class="details-list">
-       <li class="client">xxxx</li>
-       <li class="spacedot"></li>
-       <li class="role">xxxxx</li>
-       <li class="spacedot"></li>
-       <li class="year">xxxx</li>
-     </ul>
-     <div class="cimage"></div>
-     <div class="detailsproject">
-       <div class="p-description">
-         <p class="pdescriptiontext">xxxx</p>
-       </div>
-       <div class="langsAndBtns">
-         <div class="languages">
-           <ul class="languages-list">
-             <li class="lang tech1">xxx</li>
-             <li class="lang tech2">xxx</li>
-             <li class="lang tech3">xxx</li>
-           </ul>
-         </div>
-         <div class="btns">
-           <div class="live-btn btn">
-             <h3>See Live</h3>
-             <div class="live-icon"></div>
-           </div>
-           <div class="btn src-btn">
-             <h3>See Source</h3>
-             <div class="src-icon"></div>
-           </div>
-         </div>
-       </div>
-     </div>
-   </div>`;
-
+  '<div class="cardcontainer">\
+     <div class="p-title">\
+       <h2 class="titletext">xxxxx</h2>\
+       <a class="card-close-btn" href = "">x</a>\
+     </div>\
+     <ul class="details-list">\
+       <li class="client">xxxx</li>\
+       <li class="spacedot"></li>\
+       <li class="role">xxxxx</li>\
+       <li class="spacedot"></li>\
+       <li class="year">xxxx</li>\
+     </ul>\
+     <div class="cimage"></div>\
+     <div class="detailsproject">\
+       <div class="p-description">\
+         <p class="pdescriptiontext">xxxx</p>\
+       </div>\
+       <div class="langsAndBtns">\
+         <div class="languages">\
+           <ul class="languages-list">\
+             <li class="lang tech1">xxx</li>\
+             <li class="lang tech2">xxx</li>\
+             <li class="lang tech3">xxx</li>\
+           </ul>\
+         </div>\
+         <div class="btns">\
+           <div class="live-btn btn">\
+             <h3>See Live</h3>\
+             <div class="live-icon"></div>\
+           </div>\
+           <div class="btn src-btn">\
+             <h3>See Source</h3>\
+             <div class="src-icon"></div>\
+           </div>\
+         </div>\
+       </div>\
+     </div>\
+   </div>';
   div.style.position = 'fixed';
+  
+let myname = project.id;
 
-  let myname = project.id;
-
-  div.querySelector('.titletext').innerText = projects[myname].pname;
-  div.querySelector('.pdescriptiontext').innerText = projects[myname].longdescription;
-  div.querySelector('.client').innerText = projects[myname].client;
-  div.querySelector('.role').innerText = projects[myname].role;
-  div.querySelector('.year').innerText = projects[myname].year;
-  div.querySelector('.tech1').innerText = projects[myname].tech1;
-  div.querySelector('.tech2').innerText = projects[myname].tech2;
-  div.querySelector('.tech3').innerText = projects[myname].tech3;
-  div.querySelector('.cimage').style.backgroundImage = projects[myname].smallimagelink;
-  div.querySelector('.live-icon').style.backgroundImage = 'url("../images/liveicon.png")';
-  div.querySelector('.src-icon').style.backgroundImage = 'url("../images/catvector.png")';
-  document.body.prepend(div);
+div.querySelector('.titletext').innerText = projects[myname]['pname'];
+div.querySelector('.pdescriptiontext').innerText = projects[myname]['longdescription'];
+div.querySelector('.client').innerText = projects[myname]['client'];
+div.querySelector('.role').innerText = projects[myname]['role'];
+div.querySelector('.year').innerText = projects[myname]['year'];
+div.querySelector('.tech1').innerText = projects[myname]['tech1'];
+div.querySelector('.tech2').innerText = projects[myname]['tech2'];
+div.querySelector('.tech3').innerText = projects[myname]['tech3'];
+div.querySelector('.cimage').style.backgroundImage = projects[myname]['smallimagelink'];
+div.querySelector('.live-icon').style.backgroundImage = 'url("../images/liveicon.png")';
+div.querySelector('.src-icon').style.backgroundImage = 'url("../images/catvector.png")';
+document.body.prepend(div);
 }
 
 btnSeePrjct.forEach((el) => {
   el.addEventListener('click', () => {
     createPopUp (el);
-    });
   });
+});
