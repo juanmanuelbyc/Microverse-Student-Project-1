@@ -72,19 +72,19 @@ div.mobile-menu {
 .cardcontainer {
   padding: 15px;
   position: fixed;
-  align-self:stretch;
+  align-self: stretch;
   margin: 1vh auto 1vh auto;
   width: 85%;
   max-width: 1100px;
-  height: 80fr;
-  left: 0px;
-  right: 0px;
-  top: 0px;
-  bottom: 0px;
-  background: #FFFFFF;
+  height: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #fff;
   opacity: 1;
-  border: 1px solid #EBECF0;
-  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+  border: 1px solid #ebecf0;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
   border-radius: 16px;
 }
 
@@ -254,7 +254,7 @@ ul {
 
 .p-title {
   width: 100%;
-  display:inline-flex;
+  display: inline-flex;
   justify-content: space-between;
   text-align: left;
   align-self: flex-start;
@@ -262,7 +262,7 @@ ul {
 }
 
 .card-close-btn {
-  align-self:baseline;
+  align-self: baseline;
   text-decoration: none;
 }
 
@@ -298,7 +298,7 @@ ul {
 }
 
 .role {
-  width:fit-content;
+  width: fit-content;
   height: 16px;
   font-style: normal;
   font-weight: 600;
@@ -319,7 +319,7 @@ ul {
 
 .p-description {
   width: 100%;
-  height:fit-content;
+  height: fit-content;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -352,7 +352,7 @@ ul {
   color: #525252;
 }
 
-.btn{
+.btn {
   box-sizing: border-box;
   background: #fff;
   margin-top: 25px;
@@ -375,8 +375,7 @@ ul {
   gap: 4px;
 }
 
-
-.btn h3{
+.btn h3 {
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -792,7 +791,6 @@ ul {
     padding-right: 60px;
   }
 
-
   .about-me {
     background-image: url("../images/about\ myself\ -\ background-\ shape-\ desktop.png");
     background-size: cover;
@@ -871,5 +869,4 @@ ul {
   #project4 .pimage:hover {
     width: 55%;
   }
-
 }
