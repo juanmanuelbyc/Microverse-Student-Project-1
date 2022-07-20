@@ -72,11 +72,10 @@ div.mobile-menu {
 .cardcontainer {
   padding: 15px;
   position: fixed;
-  align-self: stretch;
-  margin: 1vh auto 1vh auto;
+  margin: 1px auto 1px auto;
   width: 85%;
-  max-width: 1100px;
-  height: auto;
+  min-width: 375px;
+  height: 95vh;
   left: 0;
   right: 0;
   top: 0;
@@ -220,8 +219,8 @@ ul {
 }
 
 .cimage {
-  width: 350px;
-  height: 33vh;
+  width: 98%;
+  height: 40%;
   margin: 0 auto 5px auto;
   align-self: center;
   background-size: cover;
@@ -726,9 +725,28 @@ ul {
     transition: all 0.5s ease-out;
   }
 
+  .cardcontainer {
+    padding: 15px;
+    position: fixed;
+    align-self: stretch;
+    margin: 1vh auto 1vh auto;
+    width: 85%;
+    max-width: 1100px;
+    height: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #fff;
+    opacity: 1;
+    border: 1px solid #ebecf0;
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+    border-radius: 16px;
+  }
+
   .cimage {
-    width: 55%;
-    height: 47vh;
+    width: 99%;
+    height: 60vh;
     margin: 5px auto 15px auto;
     align-self: center;
     background-size: cover;
