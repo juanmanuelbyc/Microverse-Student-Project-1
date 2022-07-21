@@ -10,10 +10,9 @@
 </head>
 
 
-
 <body class="body">
   <div id="mobile-menu" class="mobile-menu">
-    <a class="m-navlink close-btn text-decoration-none" href="#">X</a>
+    <a class="m-navlink close-btn" href="#">X</a>
     <a class="m-navlink text-decoration-none" href="#portfolio">Portfolio</a>
     <a class="m-navlink" href="#about">About</a>
     <a class="m-navlink" href="#contactme">Contact</a>
@@ -56,113 +55,7 @@
   </section>
 
   <section class="projects section" id="portfolio">
-    <div class="project" id="project1">
-      <div class="pimage"></div>
-      <div class="projectdetails">
-        <div class="p-title">
-          <h2>Tonic</h2>
-        </div>
-        <ul class="details-list">
-          <li class="client">CANOPY</li>
-          <li class="spacedot"></li>
-          <li class="role">Back End Dev</li>
-          <li class="spacedot"></li>
-          <li class="year">2015</li>
-        </ul>
-        <div class="p-description">
-          <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-        </div>
-        <div class="languages">
-          <ul class="languages-list">
-            <li class="lang">html</li>
-            <li class="lang">css</li>
-            <li class="lang">javaScript</li>
-          </ul>
-        </div>
-        <div class="project-access">See project</div>
-      </div>
-    </div>
 
-    <div class="project" id="project2">
-      <div class="pimage"></div>
-      <div class="projectdetails">
-        <div class="p-title">
-          <h2>Tonic</h2>
-        </div>
-        <ul class="details-list">
-          <li class="client">CANOPY</li>
-          <li class="spacedot"></li>
-          <li class="role">Back End Dev</li>
-          <li class="spacedot"></li>
-          <li class="year">2015</li>
-        </ul>
-        <div class="p-description">
-          <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-        </div>
-        <div class="languages">
-          <ul class="languages-list">
-            <li class="lang">html</li>
-            <li class="lang">css</li>
-            <li class="lang">javaScript</li>
-          </ul>
-        </div>
-        <div class="project-access">See project</div>
-      </div>
-    </div>
-
-    <div class="project" id="project3">
-      <div class="pimage"></div>
-      <div class="projectdetails">
-        <div class="p-title">
-          <h2>Tonic</h2>
-        </div>
-        <ul class="details-list">
-          <li class="client">CANOPY</li>
-          <li class="spacedot"></li>
-          <li class="role">Back End Dev</li>
-          <li class="spacedot"></li>
-          <li class="year">2015</li>
-        </ul>
-        <div class="p-description">
-          <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-        </div>
-        <div class="languages">
-          <ul class="languages-list">
-            <li class="lang">html</li>
-            <li class="lang">css</li>
-            <li class="lang">javaScript</li>
-          </ul>
-        </div>
-        <div class="project-access">See project</div>
-      </div>
-    </div>
-
-    <div class="project" id="project4">
-      <div class="pimage"></div>
-      <div class="projectdetails">
-        <div class="p-title">
-          <h2>Tonic</h2>
-        </div>
-        <ul class="details-list">
-          <li class="client">CANOPY</li>
-          <li class="spacedot"></li>
-          <li class="role">Back End Dev</li>
-          <li class="spacedot"></li>
-          <li class="year">2015</li>
-        </ul>
-        <div class="p-description">
-          <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-        </div>
-        <div class="languages">
-          <ul class="languages-list">
-            <li class="lang">html</li>
-            <li class="lang">css</li>
-            <li class="lang">javaScript</li>
-          </ul>
-        </div>
-        <div class="project-access">See project</div>
-      </div>
-    </div>
   </section>
 
   <section class="about-me section" id="about">
@@ -186,7 +79,7 @@
             <li class="fingers-icon"><a href="#"><img src="../images/fingers-icon.png" alt="fingers-icon" width="20" height="20"></a></li>
           </ul>
         </div>
-        <button class="resume-access">Get my Resume</button>
+        <button class="resume-access btn">Get my Resume</button>
       </div>
       <div class="about-details">
         <ul class="categories-info">
@@ -246,13 +139,14 @@
       <p>If you have an application you are interested in developing, a feature that you need built or a project that
         needs coding. I’d love to help with it </p>
     </div>
-    <form class="contactme-form" action="https://formspree.io/f/mpzbgqyj" method="post">
+    <form id="contactme-form" class="contactme-form" action="https://formspree.io/f/mpzbgqyj" method="post">
       <ul class="form-elements-list">
         <li>
           <input class="input-name" type="text" id="user-name" placeholder="Your name" maxlength="30" required>
         </li>
         <li>
-          <input class="input-email" type="email" id="user-email" required placeholder="your@email">
+          <input name="user-email" class="input-email" type="email" id="user-email" required placeholder="your@email">
+          <small></small>
         </li>
         <li>
           <textarea class="input-textarea" id="user-message" required maxlength="500"
@@ -266,5 +160,6 @@
 
   </section>
   <script src="js/index.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
