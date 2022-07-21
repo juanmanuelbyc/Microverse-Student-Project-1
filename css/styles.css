@@ -76,11 +76,10 @@ div.mobile-menu {
   margin: 1px auto 1px auto;
   width: 85%;
   min-width: 375px;
-  /* height: 95%; */
   left: 0;
   right: 0;
   top: 20px;
-  bottom: 20px; 
+  bottom: 20px;
   background: #fff;
   opacity: 1;
   border: 1px solid #ebecf0;
