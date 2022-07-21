@@ -231,7 +231,7 @@ function validateEmail(input, invalidMsg) {
 const form = document.querySelector('#contactme-form');
 const EMAIL_INVALID = 'Please email should be in lowercase';
 
-form.addEventListener("submit", function (event) {
+form.addEventListener('submit', (event) => {
   event.preventDefault();
   const emailValid = validateEmail(form.elements['user-email'], EMAIL_INVALID);
   if (emailValid) {
