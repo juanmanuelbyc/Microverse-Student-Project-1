@@ -139,27 +139,26 @@
       <p>If you have an application you are interested in developing, a feature that you need built or a project that
         needs coding. I’d love to help with it </p>
     </div>
-    <form id="contactme-form" class="contactme-form" action="https://formspree.io/f/mpzbgqyj" method="post">
+    <form id="contactme-form" class="contactme-form" action="https://formspree.io/f/mpzbgqyj" method="POST">
       <ul class="form-elements-list">
         <li>
           <input class="input-name" type="text" id="user-name" placeholder="Your name" maxlength="30" required>
         </li>
         <li>
           <input name="user-email" class="input-email" type="email" id="user-email" required placeholder="your@email">
-          <small></small>
         </li>
         <li>
           <textarea class="input-textarea" id="user-message" required maxlength="500"
             placeholder="Write your message here"></textarea>
         </li>
         <li>
-          <button class="submit-button" name="submit">Get in touch</button>
+          <small></small>
+          <button class="submit-button" name="submit-btn" type="submit">Get in touch</button>
         </li>
       </ul>
     </form>
 
   </section>
   <script src="js/index.js"></script>
-  <script src="js/app.js"></script>
 </body>
 </html>

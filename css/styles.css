@@ -595,21 +595,7 @@ ul {
   text-align: left;
 }
 
-.input-name {
-  box-sizing: border-box;
-  padding: 15px;
-  width: 327px;
-  height: 48px;
-  background: #fff;
-  border: 1px solid #cfd8dc;
-  border-radius: 8px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 20px;
-  transition: all 0.5s ease-out;
-}
-
+.input-name,
 .input-email {
   box-sizing: border-box;
   padding: 15px;
@@ -638,6 +624,10 @@ ul {
   font-size: 17px;
   line-height: 20px;
   transition: all 0.5s ease-out;
+}
+
+.small {
+  height: 50px;
 }
 
 .input-name:hover,
