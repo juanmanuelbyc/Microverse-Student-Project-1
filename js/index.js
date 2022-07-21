@@ -221,7 +221,7 @@ function showSuccess(input) {
 }
 
 function validateEmail(input, invalidMsg) {
-	const emailRegex = /^[a-z]+@[a-z0-9-]+\.[a-z0-9-.]+$/;
+	const emailRegex = /^[a-z0-9]+@[a-z0-9-]+\.[a-z0-9-.]+$/;
 	const email = input.value.trim();
 	if (!emailRegex.test(email)) {
 		return showError(input, invalidMsg);
@@ -231,12 +231,12 @@ function validateEmail(input, invalidMsg) {
 }
 
 const form = document.querySelector("#contactme-form");
-const EMAIL_INVALID = "Please enter email all lowercase";
+const EMAIL_INVALID = "Please email should be in lowercase";
 
 form.addEventListener("submit", function (event) {
 	event.preventDefault();
 	let emailValid = validateEmail(form.elements["user-email"], EMAIL_INVALID);
 	if (emailValid) {
-		alert("Demo only. No form was posted.");
+		form.submit();
 	}
 });
