@@ -204,3 +204,39 @@ btnSeePrjct.forEach((el) => {
     createPopUp(el);
   });
 });
+
+
+
+function showMsg(input, msg, type) {
+	document.querySelector("small").innerText = msg;
+	return type;
+}
+
+function showError(input, message) {
+	return showMsg(input, message, false);
+}
+
+function showSuccess(input) {
+	return showMsg(input, "", true);
+}
+
+function validateEmail(input, invalidMsg) {
+	const emailRegex = /^[a-z]+@[a-z0-9-]+\.[a-z0-9-.]+$/;
+	const email = input.value.trim();
+	if (!emailRegex.test(email)) {
+		return showError(input, invalidMsg);
+	}
+  showSuccess(input);
+	return true;
+}
+
+const form = document.querySelector("#contactme-form");
+const EMAIL_INVALID = "Please enter email all lowercase";
+
+form.addEventListener("submit", function (event) {
+	event.preventDefault();
+	let emailValid = validateEmail(form.elements["user-email"], EMAIL_INVALID);
+	if (emailValid) {
+		alert("Demo only. No form was posted.");
+	}
+});
