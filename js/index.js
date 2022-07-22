@@ -1,8 +1,26 @@
-let contactFormInfo = {
-    uName: '',
-    uEmail: '',
-    uMessage: ''
+var currentInfo = {name: undefined, email: undefined, msg: undefined};
+var nameElem = document.getElementById('user-name');
+
+if(!localStorage.getItem('userName')) {
+  populateStorage();
+} else {
+  setInfo();
 }
+
+function populateStorage() {
+  localStorage.setItem('userName', document.getElementById('user-name').value);
+  setInfo();
+}
+
+function setInfo() {
+  currentInfo.name = localStorage.getItem('userName');
+  nameElem.value = currentInfo.name;
+}
+
+nameElem.onchange = populateStorage;
+
+
+
 
 const projects = {
   project1: {
