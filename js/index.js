@@ -1,20 +1,20 @@
-let nameElem = document.getElementById('user-name');
-let emailElem = document.getElementById('user-email');
-let messageElem = document.querySelector('#user-message');
-
-function populateStorage() {
-  var info = [nameElem.value, emailElem.value, messageElem.value].join();
-  localStorage.setItem('formInfo', info);
-  setInfo();
-}
+const nameElem = document.getElementById('user-name');
+const emailElem = document.getElementById('user-email');
+const messageElem = document.querySelector('#user-message');
 
 function setInfo() {
-  let currentName = localStorage.getItem('formInfo').split(',')[0];
+  const currentName = localStorage.getItem('formInfo').split(',')[0];
   nameElem.value = currentName;
-  let currentEmail = localStorage.getItem('formInfo').split(',')[1];
+  const currentEmail = localStorage.getItem('formInfo').split(',')[1];
   emailElem.value = currentEmail;
-  let CurrentMessage = localStorage.getItem('formInfo').split(',')[2];
+  const CurrentMessage = localStorage.getItem('formInfo').split(',')[2];
   messageElem.value = CurrentMessage;
+}
+
+function populateStorage() {
+  const info = [nameElem.value, emailElem.value, messageElem.value].join();
+  localStorage.setItem('formInfo', info);
+  setInfo();
 }
 
 if (!localStorage.getItem('formInfo')) {
