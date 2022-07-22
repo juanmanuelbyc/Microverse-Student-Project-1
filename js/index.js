@@ -1,12 +1,6 @@
-var nameElem = document.getElementById('user-name');
-var emailElem = document.getElementById('user-email');
-var messageElem = document.querySelector('#user-message');
-
-if(!localStorage.getItem('formInfo')) {
-  populateStorage();
-} else {
-  setInfo();
-}
+let nameElem = document.getElementById('user-name');
+let emailElem = document.getElementById('user-email');
+let messageElem = document.querySelector('#user-message');
 
 function populateStorage() {
   var info = [nameElem.value, emailElem.value, messageElem.value].join();
@@ -15,19 +9,23 @@ function populateStorage() {
 }
 
 function setInfo() {
-  var currentName = localStorage.getItem('formInfo').split(',')[0];
+  let currentName = localStorage.getItem('formInfo').split(',')[0];
   nameElem.value = currentName;
-  var currentEmail = localStorage.getItem('formInfo').split(',')[1];
+  let currentEmail = localStorage.getItem('formInfo').split(',')[1];
   emailElem.value = currentEmail;
-  var CurrentMessage = localStorage.getItem('formInfo').split(',')[2];
+  let CurrentMessage = localStorage.getItem('formInfo').split(',')[2];
   messageElem.value = CurrentMessage;
+}
+
+if (!localStorage.getItem('formInfo')) {
+  populateStorage();
+} else {
+  setInfo();
 }
 
 nameElem.onchange = populateStorage;
 emailElem.onchange = populateStorage;
 messageElem.onchange = populateStorage;
-
-
 
 const projects = {
   project1: {
