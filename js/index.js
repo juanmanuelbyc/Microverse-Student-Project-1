@@ -1,20 +1,21 @@
-var currentInfo = {name: undefined, email: undefined, msg: undefined};
 var nameElem = document.getElementById('user-name');
+var emailElem = document.getElementById('user-email');
 
-if(!localStorage.getItem('userName')) {
+if(!localStorage.getItem('formInfo')) {
   populateStorage();
 } else {
   setInfo();
 }
 
 function populateStorage() {
-  localStorage.setItem('userName', document.getElementById('user-name').value);
+  var info = [nameElem.value].join();
+  localStorage.setItem('formInfo', info);
   setInfo();
 }
 
 function setInfo() {
-  currentInfo.name = localStorage.getItem('userName');
-  nameElem.value = currentInfo.name;
+  var currentInfo = localStorage.getItem('formInfo');
+  nameElem.value = currentInfo;
 }
 
 nameElem.onchange = populateStorage;
