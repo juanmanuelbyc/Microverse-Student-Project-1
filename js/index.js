@@ -17,7 +17,7 @@ function populateStorage() {
     email: emailElem.value,
     message: messageElem.value,
   };
-  localStorage.setItem('formInfo', info.name ,',', info.email ,',', info.message);
+  localStorage.setItem('formInfo', info.name, ',', info.email, ',', info.message);
   setInfo();
 }
 
