@@ -627,7 +627,10 @@ ul {
 }
 
 .small {
-  height: 50px;
+  height: 100px;
+  position: absolute;
+  padding: 0;
+  margin: 0;
 }
 
 .input-name:hover,

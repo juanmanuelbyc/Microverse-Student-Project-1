@@ -1,3 +1,9 @@
+let contactFormInfo = {
+    uName: '',
+    uEmail: '',
+    uMessage: ''
+}
+
 const projects = {
   project1: {
     pname: 'Tonic',
