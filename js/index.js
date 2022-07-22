@@ -1,3 +1,36 @@
+const nameElem = document.getElementById('user-name');
+const emailElem = document.getElementById('user-email');
+const messageElem = document.querySelector('#user-message');
+
+function setInfo() {
+  const currentName = localStorage.getItem('formInfo').split(',')[0];
+  nameElem.value = currentName;
+  const currentEmail = localStorage.getItem('formInfo').split(',')[1];
+  emailElem.value = currentEmail;
+  const CurrentMessage = localStorage.getItem('formInfo').split(',')[2];
+  messageElem.value = CurrentMessage;
+}
+
+function populateStorage() {
+  const info = {
+    name: nameElem.value,
+    email: emailElem.value,
+    message: messageElem.value,
+  };
+  localStorage.setItem('formInfo', info.name, ',', info.email, ',', info.message);
+  setInfo();
+}
+
+if (!localStorage.getItem('formInfo')) {
+  populateStorage();
+} else {
+  setInfo();
+}
+
+nameElem.onchange = populateStorage;
+emailElem.onchange = populateStorage;
+messageElem.onchange = populateStorage;
+
 const projects = {
   project1: {
     pname: 'Tonic',
