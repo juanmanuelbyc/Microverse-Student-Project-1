@@ -19,9 +19,6 @@ function setInfo() {
 
 nameElem.onchange = populateStorage;
 
-
-
-
 const projects = {
   project1: {
     pname: 'Tonic',
