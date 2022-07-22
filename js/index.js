@@ -162,7 +162,7 @@ for (let i = 0; i < projectz.length; i += 1) {
   project.querySelector('.client').innerText = projects[pnumber].client;
   project.querySelector('.role').innerText = projects[pnumber].role;
   project.querySelector('.year').innerText = projects[pnumber].year;
-  project.querySelector('.tech1').innerText = projects[pnumber].tech1;
+  project.querySelector('.tech1').innerText = projects[pnumber].tech;
   project.querySelector('.tech2').innerText = projects[pnumber].tech2;
   project.querySelector('.tech3').innerText = projects[pnumber].tech3;
   project.querySelector('.pimage').style.backgroundImage = projects[pnumber].smallimagelink;
@@ -214,7 +214,7 @@ function createPopUp(el) {
 
   const myname = project.id;
 
-  div.querySelector('.titletext').innerText = projects[myname].pname;
+  div.querySelector('.titletext').innerText = projects[myname].name;
   div.querySelector('.pdescriptiontext').innerText = projects[myname].longdescription;
   div.querySelector('.client').innerText = projects[myname].client;
   div.querySelector('.role').innerText = projects[myname].role;
@@ -231,7 +231,7 @@ function createPopUp(el) {
 btnSeePrjct.forEach((el) => {
   el.addEventListener('click', () => {
     createPopUp(el);
-  });
+  };
 });
 
 function showMsg(input, msg, type) {
@@ -251,7 +251,7 @@ function validateEmail(input, invalidMsg) {
   const emailRegex = /^[a-z0-9]+@[a-z0-9-]+\.[a-z0-9-.]+$/;
   const email = input.value.trim();
   if (!emailRegex.test(email)) {
-    return showError(input, invalidMsg);
+    return showError(input, invalidMsg)
   }
   showSuccess(input);
   return true;
