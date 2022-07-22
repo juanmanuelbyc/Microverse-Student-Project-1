@@ -12,8 +12,12 @@ function setInfo() {
 }
 
 function populateStorage() {
-  const info = [nameElem.value, emailElem.value, messageElem.value].join();
-  localStorage.setItem('formInfo', info);
+  const info = {
+    name: nameElem.value,
+    email: emailElem.value,
+    message: messageElem.value
+  };
+  localStorage.setItem('formInfo', info.name +','+ info.email +','+ info.message);
   setInfo();
 }
 
