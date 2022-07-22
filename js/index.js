@@ -1,5 +1,6 @@
 var nameElem = document.getElementById('user-name');
 var emailElem = document.getElementById('user-email');
+var messageElem = document.querySelector('#user-message');
 
 if(!localStorage.getItem('formInfo')) {
   populateStorage();
@@ -8,17 +9,25 @@ if(!localStorage.getItem('formInfo')) {
 }
 
 function populateStorage() {
-  var info = [nameElem.value].join();
+  var info = [nameElem.value, emailElem.value, messageElem.value].join();
   localStorage.setItem('formInfo', info);
   setInfo();
 }
 
 function setInfo() {
-  var currentInfo = localStorage.getItem('formInfo');
-  nameElem.value = currentInfo;
+  var currentName = localStorage.getItem('formInfo').split(',')[0];
+  nameElem.value = currentName;
+  var currentEmail = localStorage.getItem('formInfo').split(',')[1];
+  emailElem.value = currentEmail;
+  var CurrentMessage = localStorage.getItem('formInfo').split(',')[2];
+  messageElem.value = CurrentMessage;
 }
 
 nameElem.onchange = populateStorage;
+emailElem.onchange = populateStorage;
+messageElem.onchange = populateStorage;
+
+
 
 const projects = {
   project1: {
