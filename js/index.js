@@ -15,9 +15,9 @@ function populateStorage() {
   const info = {
     name: nameElem.value,
     email: emailElem.value,
-    message: messageElem.value
+    message: messageElem.value,
   };
-  localStorage.setItem('formInfo', info.name +','+ info.email +','+ info.message);
+  localStorage.setItem('formInfo', info.name ,',', info.email ,',', info.message);
   setInfo();
 }
 
