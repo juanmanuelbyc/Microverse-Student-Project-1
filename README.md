@@ -1,6 +1,6 @@
 # Microverse-Student-Project-1
 
-First project to add to our portfolio.
+First project of Microverse curriculum to draft our future portfolio.
 
 We are trying to apply what we have studied regarding:
 - Understanding how to parse a Figma design to create a UI.
